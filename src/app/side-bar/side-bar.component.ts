@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Observable, of} from "rxjs";
+import {environment} from "../../environments/environment";
 
 interface Navigation {
   label: string;
@@ -28,13 +29,12 @@ const navigationItems: Navigation[] = [
 export class SideBarComponent implements OnInit {
   navigationList$: Observable<Navigation[]> | undefined;
 
-  profileImageUrl!: string;
+  profileImageAddress: string = environment.imageProfileAddress;
 
   constructor() {
   }
 
   ngOnInit(): void {
     this.navigationList$ = of(navigationItems);
-    this.profileImageUrl = 'assets/images/profile-avatar.png'
   }
 }
