@@ -1,9 +1,5 @@
 @import "src/app/styles/variables.scss";
 
-html, body {
-  height: 100%;
-}
-
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
@@ -16,7 +12,6 @@ body {
 
 .home {
   display: flex;
-  width: 100%;
 
   background-color: #8d4545;
 }
@@ -24,6 +19,7 @@ body {
 .side-bar {
   background-color: $black-navigation;
   width: 14rem;
+  height: calc(100vh - 4rem);
   display: flex;
   flex-direction: column;
   padding: 2rem;
@@ -31,20 +27,29 @@ body {
   // temp
   color: white;
 
-  .profile {
+  &__profile {
     display: flex;
     flex-direction: column;
+    align-items: center;
 
-    &__avatar {
-
+    .avatar {
+      img {
+        border-radius: 50%;
+        border: 8px solid #2c2f3f;
+        margin-bottom: 1rem;
+      }
     }
 
-    &__name {
-
+    .name {
+      font-size: 22px;
+      font-weight: 600;
+      font-family: "Poppins", sans-serif;
     }
 
-    &__links {
-
+    .links {
+      display: flex;
+      flex-direction: row;
+      margin-top: 1rem;
     }
   }
 
@@ -76,6 +81,17 @@ body {
 
     a {
       padding-left: 0;
+    }
+  }
+
+  &__footer {
+    margin-top: auto;
+    align-self: center;
+    font-size: 13px;
+    color: $white-navigation-footer;
+
+    a {
+      color: $blue-navigation
     }
   }
 }

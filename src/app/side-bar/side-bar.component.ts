@@ -28,10 +28,13 @@ const navigationItems: Navigation[] = [
 export class SideBarComponent implements OnInit {
   navigationList$: Observable<Navigation[]> | undefined;
 
+  profileImageUrl!: string;
+
   constructor() {
   }
 
   ngOnInit(): void {
     this.navigationList$ = of(navigationItems);
+    this.profileImageUrl = 'assets/images/profile-avatar.png'
   }
 }

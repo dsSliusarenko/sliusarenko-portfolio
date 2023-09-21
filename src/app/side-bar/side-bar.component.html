@@ -1,19 +1,17 @@
 <div class="side-bar">
-  <div class="sidebar__profile">
-    <div class="profile">
-      <div class="profile__avatar">
-        <span>avatar</span>
+  <div class="side-bar__profile">
+      <div class="avatar">
+        <img ngSrc="{{ profileImageUrl }}" alt="Plate photo" height="120" width="120">
       </div>
-      <div class="profile__name">
-        <span>name</span>
+      <div class="name">
+        <span>Dmytro Sliusarenko</span>
       </div>
-      <div class="profile__links">
-        <span>links</span>
+      <div class="links">
+        <mat-icon class="" [svgIcon]="'file'"></mat-icon>
+        <mat-icon class="" [svgIcon]="'file'"></mat-icon>
+        <mat-icon class="" [svgIcon]="'file'"></mat-icon>
       </div>
-    </div>
   </div>
-
-
   <mat-nav-list class="side-bar__navigation" *ngIf="navigationList$ | async as navigationList">
     <ng-container *ngFor="let listItem of navigationList">
       <a mat-list-item class="navigation-element" [routerLink]="'/'+listItem?.path" routerLinkActive="is-active">
@@ -22,5 +20,7 @@
       </a>
     </ng-container>
   </mat-nav-list>
-
+  <div class="side-bar__footer">
+    <span>Developed by <a target="_blank" href="https://www.linkedin.com/in/dsliusarenko/">Dmytro Sliusarenko</a></span>
+  </div>
 </div>
