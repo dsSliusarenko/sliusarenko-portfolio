@@ -18,17 +18,21 @@
         </div>
         <div class="link">
           <mat-icon class="icon" [svgIcon]="'discord'"></mat-icon>
+        </div><div class="link">
+          <mat-icon class="icon" [svgIcon]="'mail'"></mat-icon>
         </div>
       </div>
   </div>
-  <mat-nav-list class="side-bar__navigation" *ngIf="navigationList$ | async as navigationList">
-    <ng-container *ngFor="let listItem of navigationList">
-      <a mat-list-item class="navigation-element" [routerLink]="'/'+listItem?.path" routerLinkActive="is-active">
-        <mat-icon class="icon" [svgIcon]="listItem?.icon ?? ''"></mat-icon>
-        <span class="text">{{listItem?.label}}</span>
-      </a>
-    </ng-container>
-  </mat-nav-list>
+  <div class="side-bar__navigation">
+    <mat-nav-list *ngIf="navigationList$ | async as navigationList">
+      <ng-container *ngFor="let listItem of navigationList">
+        <a mat-list-item class="navigation-element" [routerLink]="'/'+listItem?.path" routerLinkActive="is-active">
+          <mat-icon class="icon" [svgIcon]="listItem?.icon ?? ''"></mat-icon>
+          <span class="text">{{listItem?.label}}</span>
+        </a>
+      </ng-container>
+    </mat-nav-list>
+  </div>
   <div class="side-bar__footer">
     <span>Developed by <a target="_blank" href="https://www.linkedin.com/in/dsliusarenko/">Dmytro Sliusarenko</a></span>
   </div>

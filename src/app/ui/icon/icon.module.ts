@@ -37,5 +37,13 @@ export class IconModule {
       'discord',
       domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-discord.svg'),
     );
+    matIconRegistry.addSvgIcon(
+      'mail',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-mail.svg'),
+    );
+    matIconRegistry.addSvgIcon(
+      'portfolio',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-portfolio.svg'),
+    );
   }
 }

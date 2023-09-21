@@ -65,10 +65,6 @@ body {
           width: 18px;
           height:18px;
         }
-
-        mat-icon {
-          font-size: 2px;
-        }
       }
 
       .link:hover {
@@ -80,7 +76,11 @@ body {
   }
 
   &__navigation {
+    margin-top: 1.5rem;
+
     .navigation-element {
+      margin-bottom: 0.5rem;
+
       .icon, .text {
         color: $gray-navigation;
         vertical-align: middle;
@@ -88,6 +88,7 @@ body {
 
       .text {
         margin-left: 0.5rem;
+        font-size: 15px;
       }
     }
 
