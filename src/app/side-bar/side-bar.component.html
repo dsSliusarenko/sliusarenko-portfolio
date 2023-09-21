@@ -7,9 +7,18 @@
         <span>Dmytro Sliusarenko</span>
       </div>
       <div class="links">
-        <mat-icon class="" [svgIcon]="'file'"></mat-icon>
-        <mat-icon class="" [svgIcon]="'file'"></mat-icon>
-        <mat-icon class="" [svgIcon]="'file'"></mat-icon>
+        <div class="link">
+          <mat-icon class="icon" [svgIcon]="'github'"></mat-icon>
+        </div>
+        <div class="link">
+          <mat-icon class="icon" [svgIcon]="'linkedin'"></mat-icon>
+        </div>
+        <div class="link">
+          <mat-icon class="icon" [svgIcon]="'instagram'"></mat-icon>
+        </div>
+        <div class="link">
+          <mat-icon class="icon" [svgIcon]="'discord'"></mat-icon>
+        </div>
       </div>
   </div>
   <mat-nav-list class="side-bar__navigation" *ngIf="navigationList$ | async as navigationList">

@@ -21,5 +21,21 @@ export class IconModule {
       'file',
       domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-file.svg'),
     );
+    matIconRegistry.addSvgIcon(
+      'github',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-github.svg'),
+    );
+    matIconRegistry.addSvgIcon(
+      'linkedin',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-linkedin.svg'),
+    );
+    matIconRegistry.addSvgIcon(
+      'instagram',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-instagram.svg'),
+    );
+    matIconRegistry.addSvgIcon(
+      'discord',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-discord.svg'),
+    );
   }
 }
