@@ -1,3 +1,5 @@
+@import "src/app/styles/variables.scss";
+
 html, body {
   height: 100%;
 }
@@ -12,14 +14,29 @@ body {
   flex-direction: row
 }
 
-.navigation {
-  background-color: #040b14;
-  width: 19rem;
-}
-
 .home {
   display: flex;
   width: 100%;
 
   background-color: #8d4545;
+}
+
+.navigation {
+  background-color: #040b14;
+  width: 19rem;
+
+  &__icon {
+    color: $gray-navigation;
+    //margin-left: 2rem;
+    vertical-align: middle;
+    //margin-right: 5px;
+  }
+
+  &__text {
+    color: $gray-navigation;
+    //margin-left: 0.5rem;
+    vertical-align: middle;
+    //font-size: 14px;
+    //font-weight: 400;
+  }
 }
