@@ -45,5 +45,9 @@ export class IconModule {
       'portfolio',
       domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-portfolio.svg'),
     );
+    matIconRegistry.addSvgIcon(
+      'person',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-person.svg'),
+    );
   }
 }

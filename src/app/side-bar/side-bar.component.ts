@@ -10,14 +10,19 @@ interface Navigation {
 
 const navigationItems: Navigation[] = [
   {
-    label: 'Resume',
-    path: 'home/resume',
-    icon: 'file',
+    label: 'About',
+    path: 'home/about',
+    icon: 'person',
   },
   {
     label: 'Resume',
     path: 'home/resume',
     icon: 'file',
+  },
+  {
+    label: 'Portfolio',
+    path: 'home/portfolio',
+    icon: 'portfolio',
   }
 ];
 
