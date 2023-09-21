@@ -1,0 +1,26 @@
+<div class="side-bar">
+  <div class="sidebar__profile">
+    <div class="profile">
+      <div class="profile__avatar">
+        <span>avatar</span>
+      </div>
+      <div class="profile__name">
+        <span>name</span>
+      </div>
+      <div class="profile__links">
+        <span>links</span>
+      </div>
+    </div>
+  </div>
+
+
+  <mat-nav-list class="side-bar__navigation" *ngIf="navigationList$ | async as navigationList">
+    <ng-container *ngFor="let listItem of navigationList">
+      <a mat-list-item class="navigation-element" [routerLink]="'/'+listItem?.path" routerLinkActive="is-active">
+        <mat-icon class="icon" [svgIcon]="listItem?.icon ?? ''"></mat-icon>
+        <span class="text">{{listItem?.label}}</span>
+      </a>
+    </ng-container>
+  </mat-nav-list>
+
+</div>

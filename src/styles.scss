@@ -21,22 +21,61 @@ body {
   background-color: #8d4545;
 }
 
-.navigation {
-  background-color: #040b14;
-  width: 19rem;
+.side-bar {
+  background-color: $black-navigation;
+  width: 14rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
 
-  &__icon {
-    color: $gray-navigation;
-    //margin-left: 2rem;
-    vertical-align: middle;
-    //margin-right: 5px;
+  // temp
+  color: white;
+
+  .profile {
+    display: flex;
+    flex-direction: column;
+
+    &__avatar {
+
+    }
+
+    &__name {
+
+    }
+
+    &__links {
+
+    }
   }
 
-  &__text {
-    color: $gray-navigation;
-    //margin-left: 0.5rem;
-    vertical-align: middle;
-    //font-size: 14px;
-    //font-weight: 400;
+  &__navigation {
+    .navigation-element {
+      .icon, .text {
+        color: $gray-navigation;
+        vertical-align: middle;
+      }
+
+      .text {
+        margin-left: 0.5rem;
+      }
+    }
+
+    .navigation-element:hover {
+      .icon, .text {
+        transition: all 0.4s;
+      }
+
+      .icon {
+        color: $blue-navigation;
+      }
+
+      .text {
+        color: white;
+      }
+    }
+
+    a {
+      padding-left: 0;
+    }
   }
 }

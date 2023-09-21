@@ -1,16 +1,16 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {NavigationComponent} from "./navigation.component";
+import {SideBarComponent} from "./side-bar.component";
 import {AngularMaterialModule} from "../ui/angular-material/angular-material.module";
 import {RouterLink, RouterLinkActive} from "@angular/router";
 import {IconModule} from "../ui/icon/icon.module";
 
 @NgModule({
   declarations: [
-    NavigationComponent
+    SideBarComponent
   ],
   exports: [
-    NavigationComponent
+    SideBarComponent
   ],
   imports: [
     CommonModule,
@@ -20,5 +20,5 @@ import {IconModule} from "../ui/icon/icon.module";
     IconModule
   ]
 })
-export class NavigationModule {
+export class SideBarModule {
 }

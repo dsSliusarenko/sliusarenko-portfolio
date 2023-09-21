@@ -21,11 +21,11 @@ const navigationItems: Navigation[] = [
 ];
 
 @Component({
-  selector: 'sds-navigation',
-  templateUrl: './navigation.component.html',
-  styleUrls: ['./navigation.component.scss']
+  selector: 'sds-side-bar',
+  templateUrl: './side-bar.component.html',
+  styleUrls: ['./side-bar.component.scss']
 })
-export class NavigationComponent implements OnInit {
+export class SideBarComponent implements OnInit {
   navigationList$: Observable<Navigation[]> | undefined;
 
   constructor() {
