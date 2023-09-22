@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
+import {PortfolioModule} from "../side-bar/portfolio/portfolio.module";
+import {SideBarModule} from "../side-bar/side-bar.module";
 
 
 
@@ -11,8 +13,10 @@ import { HomeComponent } from './home.component';
     exports: [
         HomeComponent
     ],
-    imports: [
-        CommonModule
-    ]
+  imports: [
+    CommonModule,
+    PortfolioModule,
+    SideBarModule
+  ]
 })
 export class HomeModule { }
