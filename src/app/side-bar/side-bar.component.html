@@ -1,27 +1,28 @@
 <div class="side-bar">
   <div class="side-bar__profile">
-      <div class="avatar">
-        <img ngSrc="{{ profileImageAddress }}" alt="Plate photo" height="104" width="104">
+    <div class="avatar">
+      <img ngSrc="{{ profileImageAddress }}" alt="Plate photo" height="104" width="104">
+    </div>
+    <div class="name">
+      <span>{{environment.myName}}</span>
+    </div>
+    <div class="links">
+      <div class="link">
+        <mat-icon class="icon" [svgIcon]="'github'"></mat-icon>
       </div>
-      <div class="name">
-        <span>Dmytro Sliusarenko</span>
+      <div class="link">
+        <mat-icon class="icon" [svgIcon]="'linkedin'"></mat-icon>
       </div>
-      <div class="links">
-        <div class="link">
-          <mat-icon class="icon" [svgIcon]="'github'"></mat-icon>
-        </div>
-        <div class="link">
-          <mat-icon class="icon" [svgIcon]="'linkedin'"></mat-icon>
-        </div>
-        <div class="link">
-          <mat-icon class="icon" [svgIcon]="'instagram'"></mat-icon>
-        </div>
-        <div class="link">
-          <mat-icon class="icon" [svgIcon]="'discord'"></mat-icon>
-        </div><div class="link">
-          <mat-icon class="icon" [svgIcon]="'mail'"></mat-icon>
-        </div>
+      <div class="link">
+        <mat-icon class="icon" [svgIcon]="'instagram'"></mat-icon>
       </div>
+      <div class="link">
+        <mat-icon class="icon" [svgIcon]="'discord'"></mat-icon>
+      </div>
+      <div class="link">
+        <mat-icon class="icon" [svgIcon]="'mail'"></mat-icon>
+      </div>
+    </div>
   </div>
   <div class="side-bar__navigation">
     <mat-nav-list *ngIf="navigationList$ | async as navigationList">

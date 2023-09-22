@@ -23,7 +23,7 @@ body {
   .hero-image {
     position: fixed;
     z-index: -1;
-    background: url(assets/images/background.jpg);
+    background: url(assets/images/hero-background.jpg);
     background-size: cover;
     height: 100vh;
     width: calc(100vw - 18rem);
@@ -141,7 +141,31 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  color: white;
   height: 100vh;
+
+
+
+
+    h1 {
+      font-size: 64px;
+      font-weight: 700;
+      line-height: 56px;
+    }
+
+    h2 {
+      font-size: 26px;
+      font-family: "Poppins", sans-serif;
+      border-right: .15em solid white;
+      animation: blink-caret .5s step-end infinite;
+    }
+
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: white }
+    }
+
 }
 
 .portfolio {

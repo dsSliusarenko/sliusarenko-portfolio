@@ -42,4 +42,6 @@ export class SideBarComponent implements OnInit {
   ngOnInit(): void {
     this.navigationList$ = of(navigationItems);
   }
+
+  protected readonly environment = environment;
 }
