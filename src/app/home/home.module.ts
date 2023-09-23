@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
 import {PortfolioModule} from "../side-bar/portfolio/portfolio.module";
 import {SideBarModule} from "../side-bar/side-bar.module";
+import {ResumeModule} from "../side-bar/resume/resume.module";
 
 
 
@@ -16,7 +17,8 @@ import {SideBarModule} from "../side-bar/side-bar.module";
   imports: [
     CommonModule,
     PortfolioModule,
-    SideBarModule
+    SideBarModule,
+    ResumeModule
   ]
 })
 export class HomeModule { }
