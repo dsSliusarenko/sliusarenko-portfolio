@@ -15,6 +15,14 @@ body {
   overflow-y: auto;
 }
 
+.container {
+  display: grid;
+  max-width: 1366px;
+  width: 100%;
+  margin: 0 auto;
+  //background-color: blue;
+}
+
 .home {
   display: flex;
   flex-direction: column;
@@ -145,21 +153,26 @@ body {
   color: white;
   height: 100vh;
 
-
-
-
     h1 {
       font-size: 64px;
       font-weight: 700;
       line-height: 56px;
     }
 
-    h2 {
+    h2, span {
       font-size: 26px;
       font-family: "Poppins", sans-serif;
-      border-right: .15em solid white;
-      animation: blink-caret .5s step-end infinite;
+
     }
+
+  span {
+    border-right: .15em solid white;
+    animation: blink-caret .5s step-end infinite;
+    padding-bottom: 4px;
+    letter-spacing: 1px;
+    text-decoration: underline 3px solid $blue-underline;
+    text-underline-offset: 8px;
+  }
 
     @keyframes blink-caret {
       from, to { border-color: transparent }
@@ -168,7 +181,16 @@ body {
 
 }
 
+
+// temp
 .portfolio {
-  background-color: #149CDC;
-  height: 100px;
+  height: 500px;
+}
+
+.gary-background {
+  background-color: $gray-portfolio;
+}
+
+.white-background {
+  background-color: white;
 }
