@@ -21,7 +21,7 @@ export class HeroComponent implements OnInit {
   }
 
   typeText(): void {
-    const typingInterval = 150; // Інтервал між символами (мс)
+    const typingInterval = 150;
 
     if (this.currentIndex < this.textList.length) {
       const currentText = this.textList[this.currentIndex];
@@ -36,7 +36,7 @@ export class HeroComponent implements OnInit {
           if (this.currentIndex < this.textList.length - 1) {
             setTimeout(() => {
               this.deleteText();
-            }, 1500); // Затримка перед видаленням тексту
+            }, 1500);
           }
         }
       }, typingInterval);
@@ -44,7 +44,7 @@ export class HeroComponent implements OnInit {
   }
 
   deleteText(): void {
-    const deletingInterval = 75; // Інтервал між символами (мс)
+    const deletingInterval = 75;
 
     if (this.textToShow.length > 0) {
       const deletingIntervalId = setInterval(() => {
