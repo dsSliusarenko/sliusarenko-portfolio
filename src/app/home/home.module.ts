@@ -5,6 +5,7 @@ import {PortfolioModule} from "./portfolio/portfolio.module";
 import {SideBarModule} from "../side-bar/side-bar.module";
 import {ResumeModule} from "./resume/resume.module";
 import {HeroComponent} from "./hero/hero.component";
+import {ToolsModule} from "./tools/tools.module";
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {HeroComponent} from "./hero/hero.component";
     CommonModule,
     PortfolioModule,
     SideBarModule,
-    ResumeModule
+    ResumeModule,
+    ToolsModule
   ]
 })
 export class HomeModule {
