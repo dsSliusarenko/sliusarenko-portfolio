@@ -49,5 +49,13 @@ export class IconModule {
       'person',
       domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-person.svg'),
     );
+    matIconRegistry.addSvgIcon(
+      'tools',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-tools.svg'),
+    );
+    matIconRegistry.addSvgIcon(
+      'mail-forward',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-mail-forward.svg'),
+    );
   }
 }

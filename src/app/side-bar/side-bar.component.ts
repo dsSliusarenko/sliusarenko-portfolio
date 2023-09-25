@@ -20,9 +20,19 @@ const navigationItems: Navigation[] = [
     icon: 'file',
   },
   {
+    label: 'Tools',
+    path: 'home/tools',
+    icon: 'tools',
+  },
+  {
     label: 'Portfolio',
     path: 'home/portfolio',
     icon: 'portfolio',
+  },
+  {
+    label: 'Contact',
+    path: 'home/contact',
+    icon: 'mail-forward',
   }
 ];
 
