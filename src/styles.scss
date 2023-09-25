@@ -190,9 +190,32 @@ body {
 
 }
 
-// temp
+@mixin section {
+  padding: 4rem 0 4rem 0;
+}
+
+
 .portfolio, .resume, .tools {
+  @include section();
+
+  // temp
   height: 500px;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  color: $blue-title;
+  text-decoration: underline 3px solid $blue-title-underline;
+  text-underline-offset: 1rem;
+}
+
+.section-description {
+  color: $black-description;
+  font: 18px Open-Sans sans-serif;
+  margin-bottom: 1.5rem;
 }
 
 .gary-background {
