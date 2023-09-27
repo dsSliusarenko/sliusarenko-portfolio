@@ -1,13 +1,17 @@
 <div class="tools white-background">
   <div class="container">
-    <span class="section-title">Tools</span>
-    <span class="section-description">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</span>
+    <span class="section-title">{{environment.sections.tools.title}}</span>
+    <span class="section-description">{{environment.sections.tools.description}}</span>
     <mat-tab-group animationDuration="0ms" mat-stretch-tabs="false" mat-align-tabs="center">
-      <mat-tab label="Frameworks">
-        test
+      <mat-tab label="Languages">
+        <sds-tools-list [listType]="ListType.LANGUAGES"></sds-tools-list>
       </mat-tab>
-      <mat-tab label="Second">Content 2</mat-tab>
-      <mat-tab label="Third">Content 3</mat-tab>
+      <mat-tab label="Frameworks">
+        <sds-tools-list [listType]="ListType.FRAMEWORKS"></sds-tools-list>
+      </mat-tab>
+      <mat-tab label="Libraries">
+        <sds-tools-list [listType]="ListType.LIBRARIES"></sds-tools-list>
+      </mat-tab>
     </mat-tab-group>
   </div>
 </div>

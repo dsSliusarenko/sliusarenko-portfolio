@@ -1,0 +1,15 @@
+<div class="tools-list">
+  <div class="tool" *ngFor="let tool of toolsList.tools">
+    <div class="tool__icon">
+      <div class="icon-container">
+        <mat-icon [svgIcon]="tool.icon"></mat-icon>
+      </div>
+    </div>
+    <div class="tool__information">
+      <a href="{{tool.sourceUrl}}" class="title" target="_blank">
+        {{tool.title}}
+      </a>
+      <span class="description">{{tool.description}}</span>
+    </div>
+  </div>
+</div>

@@ -57,5 +57,49 @@ export class IconModule {
       'mail-forward',
       domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-mail-forward.svg'),
     );
+    matIconRegistry.addSvgIcon(
+      'angular',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-angular.svg'),
+    );
+    matIconRegistry.addSvgIcon(
+      'nestjs',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-nestjs.svg'),
+    );
+    matIconRegistry.addSvgIcon(
+      'react',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-react.svg'),
+    );
+    matIconRegistry.addSvgIcon(
+      'typescript',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-typescript.svg'),
+    );
+    matIconRegistry.addSvgIcon(
+      'javascript',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-javascript.svg'),
+    );
+    matIconRegistry.addSvgIcon(
+      'css',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-css.svg'),
+    );
+    matIconRegistry.addSvgIcon(
+      'html',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-html.svg'),
+    );
+    matIconRegistry.addSvgIcon(
+      'java',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-java.svg'),
+    );
+    matIconRegistry.addSvgIcon(
+      'material',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-material.svg'),
+    );
+    matIconRegistry.addSvgIcon(
+      'bootstrap',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-bootstrap.svg'),
+    );
+    matIconRegistry.addSvgIcon(
+      'primeng',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-primeng.svg'),
+    );
   }
 }

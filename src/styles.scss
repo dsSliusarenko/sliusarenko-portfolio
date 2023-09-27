@@ -190,6 +190,67 @@ body {
 
 }
 
+.tools-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-row-gap: 40px;
+  margin: 3rem 0 3rem 0;
+
+
+  .tool {
+    display: flex;
+    flex-direction: row;
+
+    &__icon {
+      .icon-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 54px;
+        height: 54px;
+        border-radius: 50%;
+        background-color: $blue-skill-circle-background;
+        transition: background-color 0.5s ease;
+      }
+    }
+
+    &__information {
+      display: flex;
+      flex-direction: column;
+      margin-left: 1rem;
+
+      .title {
+        font-weight: 700;
+        margin-bottom: 1rem;
+        font-size: 18px;
+        font-family: "Raleway", sans-serif;
+        text-decoration: none;
+        color: $black-section-item-title
+      }
+
+      .description {
+        line-height: 24px;
+        font-size: 14px;
+        color: $black-section-item-description
+      }
+    }
+  }
+
+  .tool:hover {
+    .icon-container {
+      box-sizing: border-box;
+      border: 1px solid $blue-skill-circle-background;
+      background-color: white;
+    }
+
+    .title {
+      cursor: pointer;
+    }
+  }
+}
+
 @mixin section {
   padding: 4rem 0 4rem 0;
 }
@@ -202,13 +263,14 @@ body {
   height: 500px;
 }
 
+
 .section-title {
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 1.5rem;
   padding-bottom: 1.5rem;
-  color: $blue-title;
-  text-decoration: underline 3px solid $blue-title-underline;
+  color: $blue-section-title;
+  text-decoration: underline 3px solid $blue-section-title-underline;
   text-underline-offset: 1rem;
 }
 
