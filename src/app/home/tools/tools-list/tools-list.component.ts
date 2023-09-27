@@ -26,6 +26,12 @@ export class ToolsListComponent implements OnInit {
       case this.listType = ListType.LIBRARIES:
         this.toolsList = TOOLS.filter(tool => tool.listType === ListType.LIBRARIES)[0];
         break;
+      case this.listType = ListType.SOFTWARE:
+        this.toolsList = TOOLS.filter(tool => tool.listType === ListType.SOFTWARE)[0];
+        break;
+      case this.listType = ListType.VERSIONS_CONTROL:
+        this.toolsList = TOOLS.filter(tool => tool.listType === ListType.VERSIONS_CONTROL)[0];
+        break;
     }
   }
 

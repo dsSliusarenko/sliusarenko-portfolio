@@ -101,5 +101,57 @@ export class IconModule {
       'primeng',
       domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-primeng.svg'),
     );
+    matIconRegistry.addSvgIcon(
+      'leaflet',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-leaflet.svg'),
+    );
+    matIconRegistry.addSvgIcon(
+      'rxjs',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-rxjs.svg'),
+    );
+    matIconRegistry.addSvgIcon(
+      'idea',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-idea.svg'),
+    );
+    matIconRegistry.addSvgIcon(
+      'postman',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-postman.svg'),
+    );
+    matIconRegistry.addSvgIcon(
+      'docker',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-docker.svg'),
+    );
+    matIconRegistry.addSvgIcon(
+      'swagger',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-swagger.svg'),
+    );
+    matIconRegistry.addSvgIcon(
+      'jira',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-jira.svg'),
+    );
+    matIconRegistry.addSvgIcon(
+      'confluence',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-confluence.svg'),
+    );
+    matIconRegistry.addSvgIcon(
+      'mongodb',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-mongodb.svg'),
+    );
+    matIconRegistry.addSvgIcon(
+      'graphql',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-graphql.svg'),
+    );
+    matIconRegistry.addSvgIcon(
+      'github',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-github.svg'),
+    );
+    matIconRegistry.addSvgIcon(
+      'bitbucket',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-bitbucket.svg'),
+    );
+    matIconRegistry.addSvgIcon(
+      'gitlab',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-gitlab.svg'),
+    );
   }
 }
