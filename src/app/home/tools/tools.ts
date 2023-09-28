@@ -35,6 +35,12 @@ export const TOOLS: ToolsList [] = [
         sourceUrl: 'BootstrapSSSSSSS'
       },
       {
+        title: 'Java',
+        description: 'Java: versatile, widely used programming language for applications, known for its portability and robustness.',
+        icon: 'java',
+        sourceUrl: 'BootstrapSSSSSSS'
+      },
+      {
         title: 'CSS',
         description: 'CSS styles web content, controlling layout and design. It enhances visual appeal and user experience.',
         icon: 'css',
@@ -44,12 +50,6 @@ export const TOOLS: ToolsList [] = [
         title: 'HTML',
         description: 'HTML structures web content, defining page elements and layout. It\'s essential for web development.',
         icon: 'html',
-        sourceUrl: 'BootstrapSSSSSSS'
-      },
-      {
-        title: 'Java',
-        description: 'Java: versatile, widely used programming language for applications, known for its portability and robustness.',
-        icon: 'java',
         sourceUrl: 'BootstrapSSSSSSS'
       }
     ]
@@ -122,22 +122,34 @@ export const TOOLS: ToolsList [] = [
         sourceUrl: 'https://www.jetbrains.com/idea/'
       },
       {
-        title: 'Postman',
-        description: 'Postman: API testing and development tool, simplifies testing and automation, streamlines API workflows.',
-        icon: 'postman',
-        sourceUrl: 'https://www.postman.com/'
-      },
-      {
         title: 'Docker',
         description: 'Containerization platform for packaging, distributing, and running applications with isolation and efficiency. Enables consistent deployment across environments.',
         icon: 'docker',
         sourceUrl: 'https://www.docker.com/'
       },
       {
+        title: 'MongoDB',
+        description: 'MongoDB is a NoSQL database used for flexible, scalable, and document-oriented data storage and retrieval. It\'s ideal for handling unstructured or semi-structured data efficiently.',
+        icon: 'mongodb',
+        sourceUrl: 'https://www.mongodb.com/'
+      },
+      {
         title: 'Swagger',
         description: 'Swagger is a tool for documenting and testing RESTful APIs, simplifying API development and communication.',
         icon: 'swagger',
         sourceUrl: 'https://swagger.io/'
+      },
+      {
+        title: 'Postman',
+        description: 'Postman: API testing and development tool, simplifies testing and automation, streamlines API workflows.',
+        icon: 'postman',
+        sourceUrl: 'https://www.postman.com/'
+      },
+      {
+        title: 'GraphQl',
+        description: 'GraphQL: Query language for APIs, offers precise data retrieval, reducing over-fetching, and enabling efficient client-server communication.',
+        icon: 'graphql',
+        sourceUrl: 'https://graphql.org/'
       },
       {
         title: 'Jira',
@@ -150,19 +162,7 @@ export const TOOLS: ToolsList [] = [
         description: 'Collaboration tool for teams: Create, share, and manage content seamlessly. Foster teamwork and knowledge sharing.',
         icon: 'confluence',
         sourceUrl: 'https://www.atlassian.com'
-      },
-      {
-        title: 'MongoDB',
-        description: 'MongoDB is a NoSQL database used for flexible, scalable, and document-oriented data storage and retrieval. It\'s ideal for handling unstructured or semi-structured data efficiently.',
-        icon: 'mongodb',
-        sourceUrl: 'https://www.mongodb.com/'
-      },
-      {
-        title: 'GraphQl',
-        description: 'GraphQL: Query language for APIs, offers precise data retrieval, reducing over-fetching, and enabling efficient client-server communication.',
-        icon: 'graphql',
-        sourceUrl: 'https://graphql.org/'
-      },
+      }
     ]
   },
   {

@@ -10,7 +10,7 @@ export const environment = {
   sections: {
     tools: {
       title: 'Tools',
-      description: 'Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.'
+      description: 'The "Tools" section offers insights into my web developer\'s skills and toolkit. It showcases proficiency in programming languages, libraries, frameworks, and other technologies, providing a glimpse into the developer\'s expertise and capabilities in crafting digital experiences.'
     }
   }
 };

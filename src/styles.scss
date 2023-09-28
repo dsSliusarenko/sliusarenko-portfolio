@@ -252,7 +252,7 @@ body {
 }
 
 @mixin section {
-  padding: 4rem 0 4rem 0;
+  padding: 4rem 0 2rem 0;
 }
 
 
@@ -260,7 +260,7 @@ body {
   @include section();
 
   // temp
-  height: 500px;
+  min-height: 200px;
 }
 
 
