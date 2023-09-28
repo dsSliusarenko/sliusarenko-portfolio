@@ -42,6 +42,10 @@ export class IconModule {
       domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-mail.svg'),
     );
     matIconRegistry.addSvgIcon(
+      'mail-outline',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-mail-outline.svg'),
+    );
+    matIconRegistry.addSvgIcon(
       'portfolio',
       domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-portfolio.svg'),
     );
@@ -56,6 +60,14 @@ export class IconModule {
     matIconRegistry.addSvgIcon(
       'mail-forward',
       domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-mail-forward.svg'),
+    );
+    matIconRegistry.addSvgIcon(
+      'location',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-location.svg'),
+    );
+    matIconRegistry.addSvgIcon(
+      'phone',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-phone.svg'),
     );
     matIconRegistry.addSvgIcon(
       'angular',

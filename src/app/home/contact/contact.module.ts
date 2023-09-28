@@ -1,22 +1,23 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { ContactComponent } from './contact.component';
-import {MatButtonModule} from "@angular/material/button";
-import {MatCardModule} from "@angular/material/card";
-
-
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {ContactComponent} from './contact.component';
+import {MatIconModule} from "@angular/material/icon";
+import {AngularMaterialModule} from "../../ui/angular-material/angular-material.module";
+import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
-    declarations: [
-        ContactComponent
-    ],
-    exports: [
-        ContactComponent
-    ],
+  declarations: [
+    ContactComponent
+  ],
+  exports: [
+    ContactComponent
+  ],
   imports: [
     CommonModule,
-    MatButtonModule,
-    MatCardModule
+    MatIconModule,
+    AngularMaterialModule,
+    ReactiveFormsModule
   ]
 })
-export class ContactModule { }
+export class ContactModule {
+}

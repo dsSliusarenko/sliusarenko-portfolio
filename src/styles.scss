@@ -264,12 +264,113 @@ body {
   }
 }
 
+.contact {
+  .contact-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 3rem 0 5rem 0;
+
+    &__references {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .reference {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 2.75rem;
+
+        &__icon {
+          .icon-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: $gray-contact-icon-background;
+            transition: background-color 0.5s ease;
+
+            mat-icon {
+              color: $blue-section-title-underline;
+            }
+          }
+        }
+
+        &__description {
+          display: flex;
+          flex-direction: column;
+          margin-left: 1rem;
+
+          .title {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+            color: $gray-contact-reference-title;
+            font-family: "Raleway", sans-serif;
+          }
+
+          .content {
+            font-size: 14px;
+            color: $gray-contact-reference-description;
+          }
+        }
+      }
+
+      .reference:hover {
+        .icon-container{
+          background-color: $blue-section-title-underline;
+
+          mat-icon {
+            color: white;
+          }
+        }
+      }
+    }
+
+    &__email {
+      width: 50%;
+      margin-left: 3rem;
+
+      .form {
+        &__first-line {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 2rem;
+
+          mat-form-field {
+            width: 49%;
+          }
+        }
+
+        &__second-line, &__third-line {
+          mat-form-field {
+            width: 100%;
+          }
+        }
+
+        &__first-line, &__second-line, &__third-line {
+          margin-bottom: 0.5rem;
+        }
+
+        &__fourth-line {
+          display: flex;
+          justify-content: end;
+        }
+      }
+    }
+  }
+}
+
 @mixin section {
   padding: 4rem 0 2rem 0;
 }
 
 
-.portfolio, .resume, .tools {
+.portfolio, .resume, .tools, .contact {
   @include section();
 
   // temp

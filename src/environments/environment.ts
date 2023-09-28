@@ -2,6 +2,8 @@ export const environment = {
   production: false,
   imageProfileAddress: 'assets/images/profile-avatar.png',
   myName: 'Dmytro Sliusarenko',
+  myEmail: 'ds.sliusarenko@gmail.com',
+  myPhone: '403-860-6324',
   gitHubUrl: 'https://github.com/dsSliusarenko',
   linkedInUrl: 'https://www.linkedin.com/in/dsliusarenko/',
   instagramUrl: 'https://www.instagram.com/sliusarenko_dima',
@@ -18,7 +20,7 @@ export const environment = {
     },
     contact: {
       title: 'Contact',
-      description: 'You can find various ways to get in touch with me. Whether through email, social media links, or a contact form, I\'m always available for communication and inquiries. Feel free to reach out with any questions or opportunities you\'d like to discuss.'
+      description: 'You can find various ways to get in touch with me. Whether through email or a contact form, I\'m always available for communication and inquiries. Feel free to reach out with any questions or opportunities you\'d like to discuss.'
     }
   }
 };
