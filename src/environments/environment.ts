@@ -15,6 +15,10 @@ export const environment = {
     portfolio: {
       title: 'Portfolio',
       description: 'In this Portfolio section, you can explore examples of projects I have completed. Here, you\'ll find a showcase of my work, allowing you to evaluate the use of various tools and libraries in my projects.'
+    },
+    contact: {
+      title: 'Contact',
+      description: 'You can find various ways to get in touch with me. Whether through email, social media links, or a contact form, I\'m always available for communication and inquiries. Feel free to reach out with any questions or opportunities you\'d like to discuss.'
     }
   }
 };

@@ -6,6 +6,7 @@ import {SideBarModule} from "../side-bar/side-bar.module";
 import {ResumeModule} from "./resume/resume.module";
 import {HeroComponent} from "./hero/hero.component";
 import {ToolsModule} from "./tools/tools.module";
+import {ContactModule} from "./contact/contact.module";
 
 @NgModule({
   declarations: [
@@ -15,13 +16,14 @@ import {ToolsModule} from "./tools/tools.module";
   exports: [
     HomeComponent
   ],
-  imports: [
-    CommonModule,
-    PortfolioModule,
-    SideBarModule,
-    ResumeModule,
-    ToolsModule
-  ]
+    imports: [
+        CommonModule,
+        PortfolioModule,
+        SideBarModule,
+        ResumeModule,
+        ToolsModule,
+        ContactModule
+    ]
 })
 export class HomeModule {
 }
