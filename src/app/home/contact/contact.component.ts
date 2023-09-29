@@ -4,11 +4,13 @@ import {REFERENCES} from "./references";
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {EmailService} from "../../services/email.service";
 import {EmailBody} from "../../services/email";
+import {MatSnackBar} from "@angular/material/snack-bar";
+import {SnackBarComponent} from "../../ui/snack-bar/snack-bar.component";
 
 @Component({
   selector: 'sds-contact',
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss']
+  styleUrls: ['./contact.component.scss'],
 })
 export class ContactComponent implements OnInit {
   mailForm: FormGroup = this.formBuilder.group({});
@@ -16,7 +18,7 @@ export class ContactComponent implements OnInit {
   protected readonly environment = environment;
   protected readonly REFERENCES = REFERENCES;
 
-  constructor(private formBuilder: FormBuilder, private emailService: EmailService) {
+  constructor(private formBuilder: FormBuilder, private emailService: EmailService, private _snackBar: MatSnackBar) {
   }
 
   ngOnInit() {
@@ -42,10 +44,16 @@ export class ContactComponent implements OnInit {
 
       this.emailService.sendMail(emailBody).subscribe((response: Response) => {
         if (response.ok) {
-          //show OK info
-
+          this.openSnackBar();
         }
       })
     }
+  }
+
+  openSnackBar() {
+    const durationInSeconds: number = 5
+    this._snackBar.openFromComponent(SnackBarComponent, {
+      duration: durationInSeconds * 1000,
+    });
   }
 }

@@ -16,14 +16,14 @@ import {ContactModule} from "./contact/contact.module";
   exports: [
     HomeComponent
   ],
-    imports: [
-        CommonModule,
-        PortfolioModule,
-        SideBarModule,
-        ResumeModule,
-        ToolsModule,
-        ContactModule
-    ]
+  imports: [
+    CommonModule,
+    PortfolioModule,
+    SideBarModule,
+    ResumeModule,
+    ToolsModule,
+    ContactModule
+  ]
 })
 export class HomeModule {
 }

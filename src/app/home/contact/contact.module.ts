@@ -4,6 +4,7 @@ import {ContactComponent} from './contact.component';
 import {MatIconModule} from "@angular/material/icon";
 import {AngularMaterialModule} from "../../ui/angular-material/angular-material.module";
 import {ReactiveFormsModule} from "@angular/forms";
+import {SnackBarModule} from "../../ui/snack-bar/snack-bar.module";
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import {ReactiveFormsModule} from "@angular/forms";
     CommonModule,
     MatIconModule,
     AngularMaterialModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ]
 })
 export class ContactModule {
