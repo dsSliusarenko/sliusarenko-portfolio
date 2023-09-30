@@ -70,6 +70,10 @@ export class IconModule {
       domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-phone.svg'),
     );
     matIconRegistry.addSvgIcon(
+      'priority',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-priority.svg'),
+    );
+    matIconRegistry.addSvgIcon(
       'angular',
       domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-angular.svg'),
     );

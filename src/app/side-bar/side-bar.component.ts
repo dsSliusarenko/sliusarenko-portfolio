@@ -44,8 +44,6 @@ const navigationItems: Navigation[] = [
 export class SideBarComponent implements OnInit {
   navigationList$: Observable<Navigation[]> | undefined;
 
-  profileImageAddress: string = environment.imageProfileAddress;
-
   constructor() {
   }
 

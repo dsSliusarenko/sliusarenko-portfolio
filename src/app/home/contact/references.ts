@@ -9,7 +9,7 @@ export interface Reference {
 export const REFERENCES: Reference [] = [
   {
     title: 'Location',
-    content: 'Calgary, Alberta, Canada',
+    content: environment.myLocation,
     icon: 'location'
   },
   {

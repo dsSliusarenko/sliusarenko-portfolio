@@ -3,6 +3,8 @@
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  color: $black-description;
 }
 
 .container-fluid {
@@ -265,7 +267,7 @@ body {
 }
 
 .contact {
-  .contact-section{
+  .contact-section {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -321,7 +323,7 @@ body {
       }
 
       .reference:hover {
-        .icon-container{
+        .icon-container {
           background-color: $blue-section-title-underline;
 
           mat-icon {
@@ -365,17 +367,78 @@ body {
   }
 }
 
-.snack-bar{
+.snack-bar {
   display: flex;
   justify-content: center;
+}
+
+.about {
+  .about-section {
+    margin: 30px 0 60px 0;
+    display: flex;
+
+    &__description {
+      display: flex;
+      flex-direction: column;
+      padding-left: 24px;
+
+      .profile-title {
+        font-weight: 700;
+        font-size: 26px;
+        color: $blue-section-title;
+        margin-bottom: 1rem;
+        font-family: "Raleway", sans-serif;
+      }
+
+      .short-description {
+        font-size: 16px;
+        font-style: italic !important;
+        margin-bottom: 16px;
+      }
+
+      .full-description {
+        margin-top: 20px;
+        font-size: 16px;
+      }
+
+      .personal-details {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+
+        .detail {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+
+          &__title, &__description {
+            font-size: 16px;
+          }
+
+          &__title {
+            margin: 0 10px 0 5px;
+            font-weight: bold;
+          }
+
+          mat-icon {
+            color: $blue-section-title-underline
+          }
+        }
+      }
+    }
+  }
+
+  .facts-section {
+
+  }
 }
 
 @mixin section {
   padding: 4rem 0 2rem 0;
 }
 
-
-.portfolio, .resume, .tools, .contact {
+.portfolio, .resume, .tools, .contact, .about {
   @include section();
 
   // temp
