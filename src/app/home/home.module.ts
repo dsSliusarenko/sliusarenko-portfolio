@@ -7,7 +7,7 @@ import {ResumeModule} from "./resume/resume.module";
 import {HeroComponent} from "./hero/hero.component";
 import {ToolsModule} from "./tools/tools.module";
 import {ContactModule} from "./contact/contact.module";
-import { AboutComponent } from './about/about.component';
+import {AboutComponent} from './about/about.component';
 import {MatIconModule} from "@angular/material/icon";
 
 @NgModule({

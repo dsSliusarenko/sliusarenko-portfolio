@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {environment} from "../../../environments/environment";
 
 @Component({
   selector: 'sds-resume',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class ResumeComponent {
 
+  protected readonly environment = environment;
 }
