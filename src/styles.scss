@@ -16,10 +16,10 @@ body {
   flex-direction: row
 }
 
-.content {
-  max-height: 100vh;
-  overflow-y: auto;
-}
+//.content {
+//  max-height: 100vh;
+//  overflow-y: auto;
+//}
 
 .container {
   display: grid;
@@ -45,6 +45,8 @@ body {
 }
 
 .side-bar {
+  position: sticky;
+  top: 0;
   background-color: $black-navigation;
   color: white;
   width: 14rem;

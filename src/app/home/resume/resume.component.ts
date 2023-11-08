@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {environment} from "../../../environments/environment";
 
 @Component({
@@ -7,6 +7,5 @@ import {environment} from "../../../environments/environment";
   styleUrls: ['./resume.component.scss']
 })
 export class ResumeComponent {
-
   protected readonly environment = environment;
 }
