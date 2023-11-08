@@ -8,7 +8,7 @@ body {
   //color: #272829;
 
   font-size: 16px;
-  color: $black-description;
+  color: $black-basic;
 }
 
 .container-fluid {
@@ -183,7 +183,7 @@ body {
     animation: blink-caret .5s step-end infinite;
     padding-bottom: 4px;
     letter-spacing: 1px;
-    text-decoration: underline 3px solid $blue-underline;
+    text-decoration: underline 3px solid $blue-basic;
     text-underline-offset: 8px;
   }
 
@@ -218,7 +218,7 @@ body {
         width: 54px;
         height: 54px;
         border-radius: 50%;
-        background-color: $blue-skill-circle-background;
+        background-color: $blue-basic;
         transition: background-color 0.5s ease;
       }
     }
@@ -240,7 +240,7 @@ body {
       .description {
         line-height: 24px;
         font-size: 14px;
-        color: $black-section-item-description
+        color: $black-basic
       }
     }
   }
@@ -248,7 +248,7 @@ body {
   .tool:hover {
     .icon-container {
       box-sizing: border-box;
-      border: 1px solid $blue-skill-circle-background;
+      border: 1px solid $blue-basic;
       background-color: white;
     }
 
@@ -303,7 +303,7 @@ body {
             transition: background-color 0.5s ease;
 
             mat-icon {
-              color: $blue-section-title-underline;
+              color: $blue-basic;
             }
           }
         }
@@ -330,7 +330,7 @@ body {
 
       .reference:hover {
         .icon-container {
-          background-color: $blue-section-title-underline;
+          background-color: $blue-basic;
 
           mat-icon {
             color: white;
@@ -500,7 +500,7 @@ body {
           }
 
           mat-icon {
-            color: $blue-section-title-underline
+            color: $blue-basic;
           }
         }
       }
@@ -555,18 +555,18 @@ body {
   margin-bottom: 1.5rem;
   padding-bottom: 1.5rem;
   color: $blue-section-title;
-  text-decoration: underline 3px solid $blue-section-title-underline;
+  text-decoration: underline 3px solid $blue-basic;
   text-underline-offset: 1rem;
 }
 
 .section-description {
-  color: $black-description;
+  color: $black-basic;
   font: 18px Open-Sans sans-serif;
   margin-bottom: 1.5rem;
 }
 
 .gray-background {
-  background-color: $gray-background;
+  background-color: $gray-basic;
 }
 
 .white-background {
