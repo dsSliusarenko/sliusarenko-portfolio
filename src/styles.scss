@@ -1,4 +1,4 @@
-@import "src/app/styles/variables.scss";
+@import "assets/styles/variables.scss";
 
 body {
   margin: 0;
@@ -7,11 +7,6 @@ body {
   font-size: 16px;
   color: $black-basic;
 }
-
-//.container-fluid {
-//  display: flex;
-//  flex-direction: row
-//}
 
 .container {
   display: grid;
@@ -30,13 +25,10 @@ body {
 }
 
 .side-bar {
-  //position: sticky;
-  //top: 0;
   background-color: $black-navigation;
   color: white;
   width: 14rem;
   height: calc(100vh - 2rem);
-  //height: 100vh;
   display: flex;
   flex-direction: column;
   padding: 1rem 2rem 1rem 2rem;

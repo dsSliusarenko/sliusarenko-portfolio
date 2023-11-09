@@ -2,28 +2,35 @@ import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 import {AboutComponent} from "./about/about.component";
 import {ResumeComponent} from "./resume/resume.component";
+import {ContactComponent} from "./contact/contact.component";
+import {PortfolioComponent} from "./portfolio/portfolio.component";
+import {ToolsComponent} from "./tools/tools.component";
 
 const sdsRoutes: Routes = [
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'about',
     pathMatch: 'full'
   },
-  // {
-  //   path: 'home',
-  //   loadChildren: () => import('./home/home-routing.module').then((m) => m.HomeRoutingModule),
-  // },
-  // {
-  //   path: 'home',
-  //   component: HomeComponent
-  // },
   {
-    path: 'home/about',
+    path: 'about',
     component: AboutComponent
   },
   {
-    path: 'home/resume',
+    path: 'resume',
     component: ResumeComponent
+  },
+  {
+    path: 'tools',
+    component: ToolsComponent
+  },
+  {
+    path: 'portfolio',
+    component: PortfolioComponent
+  },
+  {
+    path: 'contact',
+    component: ContactComponent
   },
 ];
 

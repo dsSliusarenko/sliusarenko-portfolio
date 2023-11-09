@@ -7,27 +7,27 @@ export interface Navigation {
 export const navigationItems: Navigation[] = [
   {
     label: 'About',
-    path: 'home/about',
+    path: 'about',
     icon: 'person',
   },
   {
     label: 'Resume',
-    path: 'home/resume',
+    path: 'resume',
     icon: 'file',
   },
   {
     label: 'Tools',
-    path: 'home/tools',
+    path: 'tools',
     icon: 'tools',
   },
   {
     label: 'Portfolio',
-    path: 'home/portfolio',
+    path: 'portfolio',
     icon: 'portfolio',
   },
   {
     label: 'Contact',
-    path: 'home/contact',
+    path: 'contact',
     icon: 'mail-forward',
   }
 ];
