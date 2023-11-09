@@ -1,4 +1,15 @@
-<div class="container-fluid">
-  <sds-side-bar></sds-side-bar>
-  <router-outlet></router-outlet>
-</div>
+<mat-drawer-container style="position: relative">
+  <mat-drawer mode="side" opened style="position: fixed; border:none">
+    <sds-side-bar></sds-side-bar>
+  </mat-drawer>
+  <mat-drawer-content>
+      <div class="hero-image">
+      </div>
+    <sds-hero></sds-hero>
+    <sds-about></sds-about>
+    <sds-resume></sds-resume>
+    <sds-tools></sds-tools>
+    <sds-portfolio></sds-portfolio>
+    <sds-contact></sds-contact>
+  </mat-drawer-content>
+</mat-drawer-container>

@@ -8,10 +8,10 @@ body {
   color: $black-basic;
 }
 
-.container-fluid {
-  display: flex;
-  flex-direction: row
-}
+//.container-fluid {
+//  display: flex;
+//  flex-direction: row
+//}
 
 .container {
   display: grid;
@@ -20,28 +20,23 @@ body {
   margin: 0 auto;
 }
 
-.home {
-  display: flex;
-  flex-direction: column;
+.hero-image {
+  position: fixed;
+  z-index: -1;
+  background: url(assets/images/hero-background.jpg);
+  background-size: cover;
+  height: 100vh;
   width: calc(100vw - 18rem);
-
-  .hero-image {
-    position: fixed;
-    z-index: -1;
-    background: url(assets/images/hero-background.jpg);
-    background-size: cover;
-    height: 100vh;
-    width: calc(100vw - 18rem);
-  }
 }
 
 .side-bar {
-  position: sticky;
-  top: 0;
+  //position: sticky;
+  //top: 0;
   background-color: $black-navigation;
   color: white;
   width: 14rem;
   height: calc(100vh - 2rem);
+  //height: 100vh;
   display: flex;
   flex-direction: column;
   padding: 1rem 2rem 1rem 2rem;
@@ -499,18 +494,6 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 @mixin section {
   padding: 4rem 0 2rem 0;
 }
@@ -518,7 +501,6 @@ body {
 .portfolio, .resume, .tools, .contact, .about {
   @include section();
 }
-
 
 
 .snack-bar {
