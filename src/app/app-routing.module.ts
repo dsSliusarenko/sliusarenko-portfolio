@@ -13,6 +13,10 @@ const sdsRoutes: Routes = [
     pathMatch: 'full'
   },
   {
+    path: 'home',
+    component: AboutComponent
+  },
+  {
     path: 'about',
     component: AboutComponent
   },

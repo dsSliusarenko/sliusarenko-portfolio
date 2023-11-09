@@ -6,6 +6,11 @@ export interface Navigation {
 
 export const navigationItems: Navigation[] = [
   {
+    label: 'Home',
+    path: 'home',
+    icon: 'home',
+  },
+  {
     label: 'About',
     path: 'about',
     icon: 'person',

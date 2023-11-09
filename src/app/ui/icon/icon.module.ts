@@ -22,6 +22,10 @@ export class IconModule {
       domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-file.svg'),
     );
     matIconRegistry.addSvgIcon(
+      'home',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-home.svg'),
+    );
+    matIconRegistry.addSvgIcon(
       'github',
       domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-github.svg'),
     );
