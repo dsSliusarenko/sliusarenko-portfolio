@@ -9,6 +9,7 @@ import {ToolsModule} from "./tools/tools.module";
 import {ContactModule} from "./contact/contact.module";
 import {AboutComponent} from './about/about.component';
 import {MatIconModule} from "@angular/material/icon";
+import {RouterOutlet} from "@angular/router";
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import {MatIconModule} from "@angular/material/icon";
     ToolsModule,
     ContactModule,
     MatIconModule,
-    NgOptimizedImage
+    NgOptimizedImage,
+    RouterOutlet
   ]
 })
 export class HomeModule {

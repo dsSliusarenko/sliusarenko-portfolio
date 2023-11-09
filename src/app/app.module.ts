@@ -13,15 +13,15 @@ import {PortfolioModule} from "./home/portfolio/portfolio.module";
   declarations: [
     AppComponent
   ],
-    imports: [
-        BrowserModule,
-        HomeModule,
-        BrowserAnimationsModule,
-        AppRoutingModule,
-        HttpClientModule,
-        SideBarModule,
-        PortfolioModule,
-    ],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    HttpClientModule,
+    HomeModule,
+    SideBarModule,
+    PortfolioModule,
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
