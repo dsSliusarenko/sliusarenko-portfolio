@@ -173,5 +173,13 @@ export class IconModule {
       'gitlab',
       domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-gitlab.svg'),
     );
+    matIconRegistry.addSvgIcon(
+        'npm',
+        domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-npm.svg'),
+    );
+    matIconRegistry.addSvgIcon(
+        'oauth',
+        domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-oauth.svg'),
+    );
   }
 }

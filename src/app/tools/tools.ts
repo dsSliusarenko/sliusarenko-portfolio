@@ -109,6 +109,12 @@ export const TOOLS: ToolsList [] = [
         description: 'Reactive programming tool in JavaScript for managing asynchronous data streams.',
         icon: 'rxjs',
         sourceUrl: 'https://rxjs.dev/'
+      },
+      {
+        title: 'OAuth',
+        description: 'An industry-standard authorization framework that enables third-party applications to access user data from a service without exposing user credentials.',
+        icon: 'oauth',
+        sourceUrl: 'https://oauth.net/'
       }
     ]
   },
@@ -162,6 +168,12 @@ export const TOOLS: ToolsList [] = [
         description: 'Collaboration tool for teams: Create, share, and manage content seamlessly. Foster teamwork and knowledge sharing.',
         icon: 'confluence',
         sourceUrl: 'https://www.atlassian.com'
+      },
+      {
+        title: 'NPM',
+        description: 'Popular software registry and package manager for JavaScript, primarily used for managing and sharing code in the Node.js ecosystem.',
+        icon: 'npm',
+        sourceUrl: 'https://www.npmjs.com/'
       }
     ]
   },
