@@ -17,27 +17,27 @@ import {IconModule} from "./ui/icon/icon.module";
 import {NgOptimizedImage} from "@angular/common";
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeroComponent,
-    AboutComponent
-  ],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    HttpClientModule,
-    AngularMaterialModule,
-    AppRoutingModule,
-    IconModule,
-    SideBarModule,
-    PortfolioModule,
-    ResumeModule,
-    ToolsModule,
-    ContactModule,
-    NgOptimizedImage,
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        HeroComponent,
+        AboutComponent,
+    ],
+    imports: [
+        BrowserModule,
+        BrowserAnimationsModule,
+        HttpClientModule,
+        AngularMaterialModule,
+        AppRoutingModule,
+        IconModule,
+        SideBarModule,
+        PortfolioModule,
+        ResumeModule,
+        ToolsModule,
+        ContactModule,
+        NgOptimizedImage,
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
 export class AppModule {
 }

@@ -8,7 +8,6 @@ import {DETAILS} from "./personal-details";
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent {
-
   protected readonly environment = environment;
   protected readonly DETAILS = DETAILS;
 }
