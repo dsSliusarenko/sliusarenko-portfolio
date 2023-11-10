@@ -181,5 +181,17 @@ export class IconModule {
         'oauth',
         domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-oauth.svg'),
     );
+    matIconRegistry.addSvgIcon(
+      'project',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-project.svg'),
+    );
+    matIconRegistry.addSvgIcon(
+      'hourglass',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-hourglass.svg'),
+    );
+    matIconRegistry.addSvgIcon(
+      'dvr',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-dvr.svg'),
+    );
   }
 }

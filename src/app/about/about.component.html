@@ -22,6 +22,14 @@
     <span class="section-title">{{environment.sections.facts.title}}</span>
     <span class="section-description">{{environment.sections.facts.description}}</span>
     <div class="facts-section">
+      <div class="fact" *ngFor="let fact of FACTS; let i = index" [attr.data-aos]="'fade-up'" [attr.data-aos-delay]="i * 100">
+        <mat-icon [svgIcon]="fact.icon"></mat-icon>
+        <div class="fact__metric">
+          <span>{{fact.metric}}</span>
+        </div>
+        <div class="fact__description" [innerHTML]="fact.description">
+        </div>
+      </div>
 
     </div>
   </div>

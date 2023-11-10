@@ -481,7 +481,40 @@ body {
   }
 
   .facts-section {
+    display: flex;
+    justify-content: space-evenly;
 
+    .fact {
+      width: 150px;
+
+      mat-icon {
+        position: relative;
+        top: 40px;
+        right: 60px;
+        color: $blue-basic;
+        width: 48px;
+        height: 48px;
+      }
+
+      &__metric {
+        span {
+          font-size: 48px;
+          font-weight: 700;
+          color: $black-resume-title;
+        }
+      }
+
+      &__description {
+        padding-top: 0.25rem;
+
+        span {
+          font-family: "Raleway", sans-serif;
+          font-size: 14px;
+          color: $blue-facts-description;
+          overflow-wrap: break-word;
+        }
+      }
+    }
   }
 }
 

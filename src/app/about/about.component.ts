@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {environment} from "../../environments/environment";
-import {DETAILS} from "./personal-details";
+import {DETAILS, PersonalDetail} from "./personal-details";
+import {Fact, FACTS} from "./facts";
 
 @Component({
   selector: 'sds-about',
@@ -9,5 +10,6 @@ import {DETAILS} from "./personal-details";
 })
 export class AboutComponent {
   protected readonly environment = environment;
-  protected readonly DETAILS = DETAILS;
+  protected readonly DETAILS: PersonalDetail[] = DETAILS;
+  protected readonly FACTS: Fact[] = FACTS;
 }
