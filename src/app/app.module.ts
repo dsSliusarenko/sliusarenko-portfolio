@@ -15,29 +15,31 @@ import {HeroComponent} from "./hero/hero.component";
 import {AboutComponent} from "./about/about.component";
 import {IconModule} from "./ui/icon/icon.module";
 import {NgOptimizedImage} from "@angular/common";
+import {CountUpModule} from "ngx-countup";
 
 @NgModule({
-    declarations: [
-        AppComponent,
-        HeroComponent,
-        AboutComponent,
-    ],
-    imports: [
-        BrowserModule,
-        BrowserAnimationsModule,
-        HttpClientModule,
-        AngularMaterialModule,
-        AppRoutingModule,
-        IconModule,
-        SideBarModule,
-        PortfolioModule,
-        ResumeModule,
-        ToolsModule,
-        ContactModule,
-        NgOptimizedImage,
-    ],
-    providers: [],
-    bootstrap: [AppComponent]
+  declarations: [
+    AppComponent,
+    HeroComponent,
+    AboutComponent,
+  ],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
+    AngularMaterialModule,
+    AppRoutingModule,
+    IconModule,
+    SideBarModule,
+    PortfolioModule,
+    ResumeModule,
+    ToolsModule,
+    ContactModule,
+    NgOptimizedImage,
+    CountUpModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
 })
 export class AppModule {
 }

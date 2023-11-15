@@ -193,5 +193,9 @@ export class IconModule {
       'dvr',
       domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-dvr.svg'),
     );
+    matIconRegistry.addSvgIcon(
+      'history',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-history.svg'),
+    );
   }
 }
