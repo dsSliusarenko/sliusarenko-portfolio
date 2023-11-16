@@ -12,7 +12,6 @@ import {MatSidenavModule} from "@angular/material/sidenav";
     MatSidenavModule,
     MatListModule,
     MatTabsModule,
-    MatCardModule,
     MatButtonModule,
     MatInputModule,
     MatSnackBarModule
@@ -21,7 +20,6 @@ import {MatSidenavModule} from "@angular/material/sidenav";
     MatSidenavModule,
     MatListModule,
     MatTabsModule,
-    MatCardModule,
     MatButtonModule,
     MatInputModule,
     MatSnackBarModule

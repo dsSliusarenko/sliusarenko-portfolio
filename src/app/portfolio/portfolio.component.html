@@ -3,27 +3,32 @@
     <span class="section-title">{{environment.sections.portfolio.title}}</span>
     <span class="section-description">{{environment.sections.portfolio.description}}</span>
     <div class="projects">
-      <div class="project" *ngFor="let project of projects">
-        <mat-card>
-          <mat-card-header>
-            <div mat-card-avatar class="example-header-image"></div>
-            <mat-card-title>Shiba Inu</mat-card-title>
-            <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-          </mat-card-header>
-          <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-          <mat-card-content>
-            <p>
-              The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-              A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-              bred for hunting.
-            </p>
-          </mat-card-content>
-          <mat-card-actions>
-            <button mat-button>LIKE</button>
-            <button mat-button>SHARE</button>
-          </mat-card-actions>
-        </mat-card>
+
+
+
+
+
+      <div class="project" *ngFor="let project of Projects">
+        <div class="project-inner rounded-50px">
+
+
+          <div class="project-front rounded-50px" [style.background-image]="'url(' + project.blackAndWhitePhotoLink + ')'">
+            <p class="title">{{project.title}}</p>
+          </div>
+
+
+          <div class="project-back rounded-50px" [style.background-image]="'url(' + project.colorPhotoLink + ')'">
+            <div class="buttons">
+              <mat-icon class="icon" [svgIcon]="'github'"></mat-icon>
+            </div>
+          </div>
+
+
+
+        </div>
       </div>
+
+
     </div>
   </div>
 </div>

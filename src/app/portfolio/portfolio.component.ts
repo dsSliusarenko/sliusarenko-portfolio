@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {environment} from "../../environments/environment";
+import {Projects} from "./projects";
+import {style} from "@angular/animations";
 
 @Component({
   selector: 'sds-portfolio',
@@ -7,7 +9,7 @@ import {environment} from "../../environments/environment";
   styleUrls: ['./portfolio.component.scss']
 })
 export class PortfolioComponent {
-  projects: any[] = [{}, {}, {}]
-
   protected readonly environment = environment;
+  protected readonly Projects: Projects[] = Projects;
+  protected readonly style = style;
 }
