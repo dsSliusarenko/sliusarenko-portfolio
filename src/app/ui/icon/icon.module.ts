@@ -197,5 +197,9 @@ export class IconModule {
       'history',
       domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-history.svg'),
     );
+    matIconRegistry.addSvgIcon(
+      'touch',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-touch.svg'),
+    );
   }
 }
