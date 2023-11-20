@@ -8,6 +8,8 @@ import {environment} from "../../../environments/environment";
   styleUrls: ['./tools-list.component.scss']
 })
 export class ToolsListComponent implements OnInit {
+  protected readonly environment = environment;
+
   @Input() listType!: ListType;
 
   toolsList!: ToolsList;
@@ -34,6 +36,4 @@ export class ToolsListComponent implements OnInit {
         break;
     }
   }
-
-  protected readonly environment = environment;
 }

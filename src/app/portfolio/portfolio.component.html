@@ -2,43 +2,55 @@
   <div class="container">
     <span class="section-title">{{environment.sections.portfolio.title}}</span>
     <span class="section-description">{{environment.sections.portfolio.description}}</span>
-    <div class="projects">
-      <div class="project" *ngFor="let project of Projects">
-        <div class="project-inner rounded-50px">
-          <div class="project-front rounded-50px"
-               [style.background-image]="'url(' + project.blackAndWhitePhotoLink + ')'">
-            <p class="title">{{project.title}}</p>
-            <mat-icon class="touch-icon" [svgIcon]="'touch'"></mat-icon>
-          </div>
-          <div class="project-back rounded-50px"
-               [style.background-image]="'url(' + project.colorPhotoLink + ')'">
-            <div class="overlay">
-              <div class="overlay__title">
-                <p class="title">{{project.title}}</p>
-              </div>
-              <div class="overlay__description">
-                <p class="description">{{project.description}}</p>
-                <!--                <div class="stack">-->
-                <!--                  <div class="technology" *ngFor="let technology of project.stack">-->
-                <!--                    <div class="technology__icon-container">-->
-                <!--                      <mat-icon [svgIcon]="technology.icon"></mat-icon>-->
-                <!--                    </div>-->
-                <!--                    <div class="technology__title">-->
-                <!--                      <p>{{technology.title}}</p>-->
-                <!--                    </div>-->
-                <!--                  </div>-->
-                <!--                </div>-->
-              </div>
-              <div class="overlay__bottom">
-                <button mat-flat-button color="primary">Live Demo</button>
-                <div class="icon-wrapper">
-                  <mat-icon [svgIcon]="'github'"></mat-icon>
+    <div class="projects-container">
+      <div class="filters" data-aos="fade-up">
+        <mat-button-toggle-group appearance="standard" name="fontStyle" aria-label="Font Style"
+                                 [value]="ProjectFilters.ALL">
+          <mat-button-toggle *ngFor="let filter of PROJECT_FILTERS" value="{{filter.value}}"
+                             (click)="setFilter(filter)">
+            {{filter.label}}
+          </mat-button-toggle>
+        </mat-button-toggle-group>
+      </div>
+      <div class="projects" data-aos="fade-up" data-aos-delay="100">
+        <div class="project" *ngFor="let project of filteredProjects">
+          <div class="project-inner rounded-5px">
+            <div class="project-front rounded-5px"
+                 [style.background-image]="'url(' + project.blackAndWhitePhotoLink + ')'">
+              <p class="title">{{project.title}}</p>
+              <mat-icon class="touch-icon" [svgIcon]="'touch'"></mat-icon>
+            </div>
+            <div class="project-back rounded-5px"
+                 [style.background-image]="'url(' + project.colorPhotoLink + ')'">
+              <div class="overlay">
+                <div class="overlay__title">
+                  <p class="title">{{project.title}}</p>
+                </div>
+                <div class="overlay__description">
+                  <p class="description">{{project.description}}</p>
+                </div>
+                <div class="stack">
+                  <div class="technology" *ngFor="let technology of project.stack">
+                    <div class="technology__icon-container">
+                      <mat-icon [svgIcon]="technology.icon"></mat-icon>
+                    </div>
+<!--                    <div class="technology__title">-->
+<!--                      <p>{{technology.title}}</p>-->
+<!--                    </div>-->
+                  </div>
+                </div>
+                <div class="overlay__bottom">
+                  <button mat-flat-button color="primary">Live Demo</button>
+                  <div class="icon-wrapper">
+                    <mat-icon [svgIcon]="'github'"></mat-icon>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
     </div>
   </div>
 </div>
