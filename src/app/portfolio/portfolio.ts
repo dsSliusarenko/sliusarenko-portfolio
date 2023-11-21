@@ -6,12 +6,11 @@ export interface Projects {
   colorPhotoLink: string;
   blackAndWhitePhotoLink: string;
   stack: Technology[];
-  technologies?: string[]
 }
 
 export interface Technology {
   title: string;
-  icon: string;
+  iconUrl: string;
 }
 
 export const Projects: Projects[] = [
@@ -22,23 +21,22 @@ export const Projects: Projects[] = [
     linkLive: '',
     colorPhotoLink: 'assets/images/projects/color.jpg',
     blackAndWhitePhotoLink: 'assets/images/projects/black2.png',
-    technologies: ['material'],
     stack: [
       {
         title: 'TypeScript',
-        icon: 'typescript'
+        iconUrl: 'typescript'
       },
       {
         title: 'Material',
-        icon: 'material'
+        iconUrl: 'material'
       },
       {
         title: 'CSS',
-        icon: 'css'
+        iconUrl: 'css'
       },
       {
         title: 'HTML',
-        icon: 'html'
+        iconUrl: 'html'
       }
     ]
   },
@@ -49,185 +47,22 @@ export const Projects: Projects[] = [
     linkLive: '',
     colorPhotoLink: 'assets/images/projects/color.jpg',
     blackAndWhitePhotoLink: 'assets/images/projects/black2.jpeg',
-    technologies: ['primeng'],
     stack: [
       {
         title: 'TypeScript',
-        icon: 'typescript'
+        iconUrl: 'typescript'
       },
       {
         title: 'Material',
-        icon: 'material'
+        iconUrl: 'material'
       },
       {
         title: 'CSS',
-        icon: 'css'
+        iconUrl: 'css'
       },
       {
         title: 'HTML',
-        icon: 'html'
-      }
-    ]
-  },
-  {
-    title: 'Space Booker',
-    description: 'It sounds like you want to use a transparent background',
-    linkGit: '',
-    linkLive: '',
-    colorPhotoLink: 'assets/images/projects/color.jpg',
-    blackAndWhitePhotoLink: 'assets/images/projects/black.jpg',
-    technologies: ['material', 'primeng'],
-    stack: [
-      {
-        title: 'TypeScript',
-        icon: 'typescript'
-      },
-      {
-        title: 'Material',
-        icon: 'material'
-      },
-      {
-        title: 'CSS',
-        icon: 'css'
-      },
-      {
-        title: 'HTML',
-        icon: 'html'
-      }
-    ]
-  },
-  {
-    title: 'Space Booker',
-    description: 'It sounds like you want to use a transparent background',
-    linkGit: '',
-    linkLive: '',
-    colorPhotoLink: 'assets/images/projects/color.jpg',
-    blackAndWhitePhotoLink: 'assets/images/projects/black.jpg',
-    technologies: ['material'],
-    stack: [
-      {
-        title: 'TypeScript',
-        icon: 'typescript'
-      },
-      {
-        title: 'Material',
-        icon: 'material'
-      },
-      {
-        title: 'CSS',
-        icon: 'css'
-      },
-      {
-        title: 'HTML',
-        icon: 'html'
-      }
-    ]
-  },
-  {
-    title: 'Space Booker',
-    description: 'It sounds like you want to use a transparent background',
-    linkGit: '',
-    linkLive: '',
-    colorPhotoLink: 'assets/images/projects/color.jpg',
-    blackAndWhitePhotoLink: 'assets/images/projects/black.jpg',
-    technologies: ['primeng'],
-    stack: [
-      {
-        title: 'TypeScript',
-        icon: 'typescript'
-      },
-      {
-        title: 'Material',
-        icon: 'material'
-      },
-      {
-        title: 'CSS',
-        icon: 'css'
-      },
-      {
-        title: 'HTML',
-        icon: 'html'
-      }
-    ]
-  },
-  {
-    title: 'Space Booker',
-    description: 'It sounds like you want to use a transparent background',
-    linkGit: '',
-    linkLive: '',
-    colorPhotoLink: 'assets/images/projects/color.jpg',
-    blackAndWhitePhotoLink: 'assets/images/projects/black.jpg',
-
-    stack: [
-      {
-        title: 'TypeScript',
-        icon: 'typescript'
-      },
-      {
-        title: 'Material',
-        icon: 'material'
-      },
-      {
-        title: 'CSS',
-        icon: 'css'
-      },
-      {
-        title: 'HTML',
-        icon: 'html'
-      }
-    ]
-  },
-  {
-    title: 'Space Booker',
-    description: 'It sounds like you want to use a transparent background',
-    linkGit: '',
-    linkLive: '',
-    colorPhotoLink: 'assets/images/projects/color.jpg',
-    blackAndWhitePhotoLink: 'assets/images/projects/black.jpg',
-
-    stack: [
-      {
-        title: 'TypeScript',
-        icon: 'typescript'
-      },
-      {
-        title: 'Material',
-        icon: 'material'
-      },
-      {
-        title: 'CSS',
-        icon: 'css'
-      },
-      {
-        title: 'HTML',
-        icon: 'html'
-      }
-    ]
-  },
-  {
-    title: 'Space Booker',
-    description: 'It sounds like you want to use a transparent background',
-    linkGit: '',
-    linkLive: '',
-    colorPhotoLink: 'assets/images/projects/color.jpg',
-    blackAndWhitePhotoLink: 'assets/images/projects/black.jpg',
-
-    stack: [
-      {
-        title: 'TypeScript',
-        icon: 'typescript'
-      },
-      {
-        title: 'Material',
-        icon: 'material'
-      },
-      {
-        title: 'CSS',
-        icon: 'css'
-      },
-      {
-        title: 'HTML',
-        icon: 'html'
+        iconUrl: 'html'
       }
     ]
   },
@@ -241,19 +76,97 @@ export const Projects: Projects[] = [
     stack: [
       {
         title: 'TypeScript',
-        icon: 'typescript'
+        iconUrl: 'typescript'
       },
       {
         title: 'Material',
-        icon: 'material'
+        iconUrl: 'material'
       },
       {
         title: 'CSS',
-        icon: 'css'
+        iconUrl: 'css'
       },
       {
         title: 'HTML',
-        icon: 'html'
+        iconUrl: 'html'
+      }
+    ]
+  },
+  {
+    title: 'Space Booker',
+    description: 'It sounds like you want to use a transparent background',
+    linkGit: '',
+    linkLive: '',
+    colorPhotoLink: 'assets/images/projects/color.jpg',
+    blackAndWhitePhotoLink: 'assets/images/projects/black.jpg',
+    stack: [
+      {
+        title: 'TypeScript',
+        iconUrl: 'typescript'
+      },
+      {
+        title: 'Material',
+        iconUrl: 'material'
+      },
+      {
+        title: 'CSS',
+        iconUrl: 'css'
+      },
+      {
+        title: 'HTML',
+        iconUrl: 'html'
+      }
+    ]
+  },
+  {
+    title: 'Space Booker',
+    description: 'It sounds like you want to use a transparent background',
+    linkGit: '',
+    linkLive: '',
+    colorPhotoLink: 'assets/images/projects/color.jpg',
+    blackAndWhitePhotoLink: 'assets/images/projects/black.jpg',
+    stack: [
+      {
+        title: 'TypeScript',
+        iconUrl: 'typescript'
+      },
+      {
+        title: 'Material',
+        iconUrl: 'material'
+      },
+      {
+        title: 'CSS',
+        iconUrl: 'css'
+      },
+      {
+        title: 'HTML',
+        iconUrl: 'html'
+      }
+    ]
+  },
+  {
+    title: 'Space Booker',
+    description: 'It sounds like you want to use a transparent background',
+    linkGit: '',
+    linkLive: '',
+    colorPhotoLink: 'assets/images/projects/color.jpg',
+    blackAndWhitePhotoLink: 'assets/images/projects/black.jpg',
+    stack: [
+      {
+        title: 'TypeScript',
+        iconUrl: 'typescript'
+      },
+      {
+        title: 'Material',
+        iconUrl: 'material'
+      },
+      {
+        title: 'CSS',
+        iconUrl: 'css'
+      },
+      {
+        title: 'HTML',
+        iconUrl: 'html'
       }
     ]
   }

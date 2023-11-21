@@ -2,7 +2,7 @@
 
 body {
   margin: 0;
-  font-family: "Open Sans", sans-serif;
+  //font-family: "Open Sans", sans-serif;
 
   font-size: 16px;
   color: $black-basic;
@@ -290,8 +290,9 @@ body {
 
       .project {
         background-color: transparent;
-        width: 500px;
-        height: 400px;
+        //width: calc((1366px - 2rem)/3);
+        width: 444px;
+        height: 330px;
         perspective: 1000px;
       }
 
@@ -350,7 +351,7 @@ body {
           display: flex;
           flex-direction: column;
           justify-content: space-between;
-          height: 60%;
+          height: 50%;
           width: 100%;
           padding: 1rem;
           background: rgba($gray-portfolio-overlay-background, 0.92);
@@ -359,7 +360,7 @@ body {
 
           p {
             color: white;
-            font-weight: bold;
+            //font-weight: bold;
             text-align: start;
             margin: 0;
           }
@@ -377,39 +378,35 @@ body {
           }
 
           &__description {
-            margin-top: 1.5rem;
+            margin-top: 0.75rem;
           }
 
-          .stack {
-            display: flex;
-            align-items: center;
-
-            .technology {
-              margin-right: 0.5rem;
-            }
-
-            .technology:last-child {
-              margin-right: 0;
-            }
-
-            mat-icon {
-              width: 25px;
-              height: 25px;
-            }
-
-            mat-icon:last-child {
-              margin-right: 0;
-            }
-
-            //p {
-            //  font-size: 1rem;
+          //.stack {
+            //display: flex;
+            //align-items: center;
+            //
+            //.technology {
+            //  margin-right: 0.5rem;
             //}
-          }
+            //
+            //.technology:last-child {
+            //  margin-right: 0;
+            //}
+            //
+            //mat-icon {
+            //  width: 25px;
+            //  height: 25px;
+            //}
+            //
+            //mat-icon:last-child {
+            //  margin-right: 0;
+            //}
+          //}
 
           &__bottom {
             display: flex;
             justify-content: space-between;
-            margin-top: 1.25rem;
+            //margin-top: 1.25rem;
 
             .icon-wrapper {
               display: flex;
@@ -717,6 +714,53 @@ body {
         }
       }
     }
+  }
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .slides {
+    display: flex;
+    overflow: hidden;
+
+    .slide {
+      display: flex;
+      align-items: center;
+
+      margin-right: 0.5rem;
+      padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+      border-radius: 16px;
+      background-color: $gray-basic;
+      color: #1D76ED;
+
+      img {
+        margin-right: 0.5rem;
+        width: 18px;
+        height: 18px;
+      }
+
+      span {
+        color: #212121;
+        font-size: 1rem;
+      }
+    }
+
+    .slide:last-child {
+      margin-right: 0;
+    }
+
+    .slide:hover {
+      transition: 0.2s;
+      background-color: #e0e0e0;
+    }
+  }
+
+  mat-icon {
+    color: $blue-basic;
+    cursor: pointer;
   }
 }
 

@@ -201,5 +201,13 @@ export class IconModule {
       'touch',
       domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-touch.svg'),
     );
+    matIconRegistry.addSvgIcon(
+      'arrow-right',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-arrow-right.svg'),
+    );
+    matIconRegistry.addSvgIcon(
+      'arrow-left',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-arrow-left.svg'),
+    );
   }
 }

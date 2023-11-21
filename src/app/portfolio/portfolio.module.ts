@@ -3,6 +3,7 @@ import {CommonModule, NgOptimizedImage} from '@angular/common';
 import {PortfolioComponent} from './portfolio.component';
 import {AngularMaterialModule} from "../ui/angular-material/angular-material.module";
 import {MatIconModule} from "@angular/material/icon";
+import {CarouselModule} from "../ui/carousel/carousel.module";
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import {MatIconModule} from "@angular/material/icon";
     CommonModule,
     AngularMaterialModule,
     NgOptimizedImage,
-    MatIconModule
+    MatIconModule,
+    CarouselModule
   ]
 })
 export class PortfolioModule {

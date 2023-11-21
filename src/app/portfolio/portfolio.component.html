@@ -6,8 +6,8 @@
       <div class="filters" data-aos="fade-up">
         <mat-button-toggle-group appearance="standard" name="fontStyle" aria-label="Font Style"
                                  [value]="ProjectFilters.ALL">
-          <mat-button-toggle *ngFor="let filter of PROJECT_FILTERS" value="{{filter.value}}"
-                             (click)="setFilter(filter)">
+          <mat-button-toggle *ngFor="let filter of PROJECT_FILTERS"
+                             value="{{filter.value}}" (click)="setFilter(filter)">
             {{filter.label}}
           </mat-button-toggle>
         </mat-button-toggle-group>
@@ -30,14 +30,7 @@
                   <p class="description">{{project.description}}</p>
                 </div>
                 <div class="stack">
-                  <div class="technology" *ngFor="let technology of project.stack">
-                    <div class="technology__icon-container">
-                      <mat-icon [svgIcon]="technology.icon"></mat-icon>
-                    </div>
-<!--                    <div class="technology__title">-->
-<!--                      <p>{{technology.title}}</p>-->
-<!--                    </div>-->
-                  </div>
+                  <sds-carousel [slidesContent]="project.stack"></sds-carousel>
                 </div>
                 <div class="overlay__bottom">
                   <button mat-flat-button color="primary">Live Demo</button>
@@ -50,7 +43,6 @@
           </div>
         </div>
       </div>
-
     </div>
   </div>
 </div>
