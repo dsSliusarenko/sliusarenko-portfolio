@@ -23,21 +23,25 @@ export const Projects: Projects[] = [
     blackAndWhitePhotoLink: 'assets/images/projects/black2.png',
     stack: [
       {
-        title: 'TypeScript',
-        iconUrl: 'typescript'
+        title: 'TS',
+        iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/512px-Typescript_logo_2020.svg.png?20221110153201'
       },
       {
         title: 'Material',
-        iconUrl: 'material'
+        iconUrl: 'https://angular.io/assets/images/logos/angular/angular.svg'
       },
       {
         title: 'CSS',
-        iconUrl: 'css'
+        iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/1280px-CSS3_logo.svg.png'
       },
       {
         title: 'HTML',
-        iconUrl: 'html'
-      }
+        iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/archive/6/61/20111018085326%21HTML5_logo_and_wordmark.svg/120px-HTML5_logo_and_wordmark.svg.png'
+      },
+      {
+        title: 'NgRx',
+        iconUrl: 'https://seeklogo.com/images/N/ngrx-logo-D484A6B4B3-seeklogo.com.png'
+      },
     ]
   },
   {
@@ -49,21 +53,25 @@ export const Projects: Projects[] = [
     blackAndWhitePhotoLink: 'assets/images/projects/black2.jpeg',
     stack: [
       {
-        title: 'TypeScript',
-        iconUrl: 'typescript'
+        title: 'TS',
+        iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/512px-Typescript_logo_2020.svg.png?20221110153201'
       },
       {
         title: 'Material',
-        iconUrl: 'material'
+        iconUrl: 'https://angular.io/assets/images/logos/angular/angular.svg'
       },
       {
         title: 'CSS',
-        iconUrl: 'css'
+        iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/1280px-CSS3_logo.svg.png'
       },
       {
         title: 'HTML',
-        iconUrl: 'html'
-      }
+        iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/archive/6/61/20111018085326%21HTML5_logo_and_wordmark.svg/120px-HTML5_logo_and_wordmark.svg.png'
+      },
+      {
+        title: 'NgRx',
+        iconUrl: 'https://seeklogo.com/images/N/ngrx-logo-D484A6B4B3-seeklogo.com.png'
+      },
     ]
   },
   {
@@ -75,21 +83,25 @@ export const Projects: Projects[] = [
     blackAndWhitePhotoLink: 'assets/images/projects/black.jpg',
     stack: [
       {
-        title: 'TypeScript',
-        iconUrl: 'typescript'
+        title: 'TS',
+        iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/512px-Typescript_logo_2020.svg.png?20221110153201'
       },
       {
         title: 'Material',
-        iconUrl: 'material'
+        iconUrl: 'https://angular.io/assets/images/logos/angular/angular.svg'
       },
       {
         title: 'CSS',
-        iconUrl: 'css'
+        iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/1280px-CSS3_logo.svg.png'
       },
       {
         title: 'HTML',
-        iconUrl: 'html'
-      }
+        iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/archive/6/61/20111018085326%21HTML5_logo_and_wordmark.svg/120px-HTML5_logo_and_wordmark.svg.png'
+      },
+      {
+        title: 'NgRx',
+        iconUrl: 'https://seeklogo.com/images/N/ngrx-logo-D484A6B4B3-seeklogo.com.png'
+      },
     ]
   },
   {
@@ -101,21 +113,25 @@ export const Projects: Projects[] = [
     blackAndWhitePhotoLink: 'assets/images/projects/black.jpg',
     stack: [
       {
-        title: 'TypeScript',
-        iconUrl: 'typescript'
+        title: 'TS',
+        iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/512px-Typescript_logo_2020.svg.png?20221110153201'
       },
       {
         title: 'Material',
-        iconUrl: 'material'
+        iconUrl: 'https://angular.io/assets/images/logos/angular/angular.svg'
       },
       {
         title: 'CSS',
-        iconUrl: 'css'
+        iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/1280px-CSS3_logo.svg.png'
       },
       {
         title: 'HTML',
-        iconUrl: 'html'
-      }
+        iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/archive/6/61/20111018085326%21HTML5_logo_and_wordmark.svg/120px-HTML5_logo_and_wordmark.svg.png'
+      },
+      {
+        title: 'NgRx',
+        iconUrl: 'https://seeklogo.com/images/N/ngrx-logo-D484A6B4B3-seeklogo.com.png'
+      },
     ]
   },
   {
@@ -127,21 +143,25 @@ export const Projects: Projects[] = [
     blackAndWhitePhotoLink: 'assets/images/projects/black.jpg',
     stack: [
       {
-        title: 'TypeScript',
-        iconUrl: 'typescript'
+        title: 'TS',
+        iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/512px-Typescript_logo_2020.svg.png?20221110153201'
       },
       {
         title: 'Material',
-        iconUrl: 'material'
+        iconUrl: 'https://angular.io/assets/images/logos/angular/angular.svg'
       },
       {
         title: 'CSS',
-        iconUrl: 'css'
+        iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/1280px-CSS3_logo.svg.png'
       },
       {
         title: 'HTML',
-        iconUrl: 'html'
-      }
+        iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/archive/6/61/20111018085326%21HTML5_logo_and_wordmark.svg/120px-HTML5_logo_and_wordmark.svg.png'
+      },
+      {
+        title: 'NgRx',
+        iconUrl: 'https://seeklogo.com/images/N/ngrx-logo-D484A6B4B3-seeklogo.com.png'
+      },
     ]
   },
   {
@@ -153,21 +173,25 @@ export const Projects: Projects[] = [
     blackAndWhitePhotoLink: 'assets/images/projects/black.jpg',
     stack: [
       {
-        title: 'TypeScript',
-        iconUrl: 'typescript'
+        title: 'TS',
+        iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/512px-Typescript_logo_2020.svg.png?20221110153201'
       },
       {
         title: 'Material',
-        iconUrl: 'material'
+        iconUrl: 'https://angular.io/assets/images/logos/angular/angular.svg'
       },
       {
         title: 'CSS',
-        iconUrl: 'css'
+        iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/1280px-CSS3_logo.svg.png'
       },
       {
         title: 'HTML',
-        iconUrl: 'html'
-      }
+        iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/archive/6/61/20111018085326%21HTML5_logo_and_wordmark.svg/120px-HTML5_logo_and_wordmark.svg.png'
+      },
+      {
+        title: 'NgRx',
+        iconUrl: 'https://seeklogo.com/images/N/ngrx-logo-D484A6B4B3-seeklogo.com.png'
+      },
     ]
   }
 ]

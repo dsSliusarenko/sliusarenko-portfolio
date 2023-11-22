@@ -759,7 +759,13 @@ body {
   }
 
   mat-icon {
+    color: white;
+    cursor: pointer;
+  }
+
+  mat-icon:hover {
     color: $blue-basic;
+    transition: 0.3s;
     cursor: pointer;
   }
 }

@@ -1,43 +1,40 @@
-import {Component, Input} from '@angular/core';
+import {Component, Input, OnChanges} from '@angular/core';
+import {Technology} from "../../portfolio/portfolio";
 
 @Component({
   selector: 'sds-carousel',
   templateUrl: './carousel.component.html',
   styleUrls: ['./carousel.component.scss'],
-
 })
-export class CarouselComponent {
-  @Input() slidesContent!: any[];
-
-  slides = Array.from({ length: 10 }, (_, i) => i + 1);
+export class CarouselComponent implements OnChanges {
+  @Input() technologies: Technology[] = [];
+  @Input() initSlidesAmount!: number;
   currentIndex = 0;
-  visibleSlides: number[] = [];
+  visibleTechnologies: Technology[] = [];
 
-  constructor() {
-      this.updateVisibleSlides();
+  ngOnChanges(): void {
+    this.updateVisibleTechnologies();
   }
 
-  updateVisibleSlides() {
-    // this.visibleSlides = this.slides.slice(this.currentIndex, this.currentIndex + 4);
-    this.visibleSlides = this.slides.slice(this.currentIndex, this.currentIndex + 4);
+  updateVisibleTechnologies(): void {
+    this.visibleTechnologies = this.technologies.slice(this.currentIndex, this.currentIndex + this.initSlidesAmount);
   }
 
-  prevSlide() {
+  prevSlide(): void {
     if (this.currentIndex > 0) {
       this.currentIndex--;
     } else {
-      this.currentIndex = this.slides.length - 4;
+      this.currentIndex = this.technologies.length - this.initSlidesAmount;
     }
-    this.updateVisibleSlides();
+    this.updateVisibleTechnologies();
   }
 
-  nextSlide() {
-    if (this.currentIndex < this.slides.length - 4) {
+  nextSlide(): void {
+    if (this.currentIndex < this.technologies.length - this.initSlidesAmount) {
       this.currentIndex++;
     } else {
       this.currentIndex = 0;
     }
-    this.updateVisibleSlides();
+    this.updateVisibleTechnologies();
   }
-
 }

@@ -30,7 +30,7 @@
                   <p class="description">{{project.description}}</p>
                 </div>
                 <div class="stack">
-                  <sds-carousel [slidesContent]="project.stack"></sds-carousel>
+                    <sds-carousel [technologies]="project.stack" [initSlidesAmount]="4"></sds-carousel>
                 </div>
                 <div class="overlay__bottom">
                   <button mat-flat-button color="primary">Live Demo</button>

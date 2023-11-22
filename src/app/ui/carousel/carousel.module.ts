@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {CommonModule, NgOptimizedImage} from '@angular/common';
 import { CarouselComponent } from './carousel.component';
 import {MatChipsModule} from "@angular/material/chips";
 import {MatIconModule} from "@angular/material/icon";
@@ -13,7 +13,8 @@ import {MatIconModule} from "@angular/material/icon";
   imports: [
     CommonModule,
     MatChipsModule,
-    MatIconModule
+    MatIconModule,
+    NgOptimizedImage
   ],
   exports: [
     CarouselComponent
