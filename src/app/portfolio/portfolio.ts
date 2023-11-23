@@ -1,10 +1,10 @@
-export interface Projects {
+export interface Project {
   title: string;
   description: string;
   linkGit: string;
   linkLive: string;
   screenshotLink: string;
-  stack: Technology[];
+  technologies: Technology[];
 }
 
 export interface Technology {
@@ -12,21 +12,25 @@ export interface Technology {
   iconUrl: string;
 }
 
-export const Projects: Projects[] = [
+export const Projects: Project[] = [
   {
-    title: 'Global Flow Material',
+    title: 'Global Flow Mat + Prime',
     description: 'A complex web CMS platform streamlining the process of creating and approving advertising content among international branches process of creating and approving advertising',
     linkGit: '',
     linkLive: 'https://www.shecodes.io/athena/1402-how-to-use-css-for-hover-on-a-text',
     screenshotLink: 'assets/images/projects/color.jpg',
-    stack: [
+    technologies: [
       {
         title: 'TS',
         iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/512px-Typescript_logo_2020.svg.png?20221110153201'
       },
       {
-        title: 'Material',
+        title: 'MATERIAL',
         iconUrl: 'https://angular.io/assets/images/logos/angular/angular.svg'
+      },
+      {
+        title: 'PRIME_NG',
+        iconUrl: 'https://i0.wp.com/www.primefaces.org/wp-content/uploads/2018/05/primeng-logo.png?ssl=1'
       },
       {
         title: 'CSS',
@@ -48,7 +52,7 @@ export const Projects: Projects[] = [
     linkGit: '',
     linkLive: '',
     screenshotLink: 'assets/images/projects/color2.jpg',
-    stack: [
+    technologies: [
       {
         title: 'TS',
         iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/512px-Typescript_logo_2020.svg.png?20221110153201'
@@ -77,7 +81,7 @@ export const Projects: Projects[] = [
     linkGit: '',
     linkLive: '',
     screenshotLink: 'assets/images/projects/color3.jpg',
-    stack: [
+    technologies: [
       {
         title: 'TS',
         iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/512px-Typescript_logo_2020.svg.png?20221110153201'
@@ -106,7 +110,7 @@ export const Projects: Projects[] = [
     linkGit: '',
     linkLive: '',
     screenshotLink: 'assets/images/projects/color4.jpg',
-    stack: [
+    technologies: [
       {
         title: 'TS',
         iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/512px-Typescript_logo_2020.svg.png?20221110153201'
@@ -135,7 +139,7 @@ export const Projects: Projects[] = [
     linkGit: '',
     linkLive: '',
     screenshotLink: 'assets/images/projects/color5.jpg',
-    stack: [
+    technologies: [
       {
         title: 'TS',
         iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/512px-Typescript_logo_2020.svg.png?20221110153201'
@@ -164,7 +168,7 @@ export const Projects: Projects[] = [
     linkGit: '',
     linkLive: '',
     screenshotLink: 'assets/images/projects/color6.jpg',
-    stack: [
+    technologies: [
       {
         title: 'TS',
         iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/512px-Typescript_logo_2020.svg.png?20221110153201'
