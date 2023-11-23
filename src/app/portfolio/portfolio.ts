@@ -4,7 +4,6 @@ export interface Projects {
   linkGit: string;
   linkLive: string;
   screenshotLink: string;
-  isScreenshotBlack?: boolean;
   stack: Technology[];
 }
 
@@ -18,7 +17,7 @@ export const Projects: Projects[] = [
     title: 'Global Flow Material',
     description: 'A complex web CMS platform streamlining the process of creating and approving advertising content among international branches process of creating and approving advertising',
     linkGit: '',
-    linkLive: '',
+    linkLive: 'https://www.shecodes.io/athena/1402-how-to-use-css-for-hover-on-a-text',
     screenshotLink: 'assets/images/projects/color.jpg',
     stack: [
       {
@@ -40,7 +39,7 @@ export const Projects: Projects[] = [
       {
         title: 'NgRx',
         iconUrl: 'https://seeklogo.com/images/N/ngrx-logo-D484A6B4B3-seeklogo.com.png'
-      },
+      }
     ]
   },
   {
@@ -78,7 +77,6 @@ export const Projects: Projects[] = [
     linkGit: '',
     linkLive: '',
     screenshotLink: 'assets/images/projects/color3.jpg',
-    isScreenshotBlack: true,
     stack: [
       {
         title: 'TS',

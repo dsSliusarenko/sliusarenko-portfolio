@@ -25,14 +25,16 @@
               <img class="background" src="{{project.screenshotLink}}" alt="Project ScreenShot">
               <div class="overlay">
                 <div class="overlay__title">
-                  <p class="title">{{project.title}}</p>
+                  <a href="{{project.linkLive}}" class="title" target="_blank">
+                    {{project.title}}
+                  </a>
                 </div>
                 <div class="overlay__description">
                   <p class="description">{{project.description}}</p>
                 </div>
                 <div class="overlay__bottom">
-                  <button mat-flat-button color="primary">Live Demo</button>
-                  <sds-carousel [slides]="project.stack" [initSlidesAmount]="4" [showTitles]="false"></sds-carousel>
+                  <button mat-flat-button color="primary">Demo</button>
+                  <sds-carousel [slides]="project.stack" [initSlidesAmount]="5" [showTitles]="false"></sds-carousel>
                   <div class="icon-wrapper">
                     <mat-icon [svgIcon]="'github'"></mat-icon>
                   </div>

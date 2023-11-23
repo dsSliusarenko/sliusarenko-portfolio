@@ -381,11 +381,16 @@ body {
           &__title {
             display: flex;
             justify-content: center;
-            font-size: 2rem;
 
-            p:hover {
+            .title {
+              text-decoration: none;
+              font-size: 2rem;
+              color: white;
+            }
+
+            .title:hover {
               cursor: pointer;
-              color: $blue-basic;
+              text-shadow: 0 0 3px $purple-portfolio-overlay-title;
               transition: 0.4s;
             }
           }
@@ -759,7 +764,7 @@ body {
   }
 
   mat-icon:hover {
-    color: black;
+    color: $purple-portfolio-overlay-title;
     transition: 0.3s;
     cursor: pointer;
   }
