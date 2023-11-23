@@ -213,5 +213,41 @@ export class IconModule {
       'service',
       domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-service.svg'),
     );
+    matIconRegistry.addSvgIcon(
+      'development',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-development.svg'),
+    );
+    matIconRegistry.addSvgIcon(
+      'update',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-update.svg'),
+    );
+    matIconRegistry.addSvgIcon(
+      'support',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-support.svg'),
+    );
+    matIconRegistry.addSvgIcon(
+      'component',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-component.svg'),
+    );
+    matIconRegistry.addSvgIcon(
+      'device',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-devices.svg'),
+    );
+    matIconRegistry.addSvgIcon(
+      'design',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-design.svg'),
+    );
+    matIconRegistry.addSvgIcon(
+      'review',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-review.svg'),
+    );
+    matIconRegistry.addSvgIcon(
+      'best',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-best.svg'),
+    );
+    matIconRegistry.addSvgIcon(
+      'education',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-education.svg'),
+    );
   }
 }

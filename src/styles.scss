@@ -236,6 +236,34 @@ body {
   }
 }
 
+.services-list {
+  @extend .tools-list;
+
+  .tool:hover {
+    .icon-container {
+      box-sizing: border-box;
+      border: 1px solid $blue-basic;
+      background-color: white;
+      cursor: pointer;
+    }
+
+    mat-icon {
+      transition: 0.3s;
+      color: $black-basic
+    }
+
+    .title {
+      cursor: default;
+    }
+  }
+
+  mat-icon {
+    width: 30px;
+    height: 30px;
+    color: white;
+  }
+}
+
 .portfolio {
   .projects-container {
     display: flex;
