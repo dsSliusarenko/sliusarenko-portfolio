@@ -15,13 +15,14 @@
       <div class="projects" data-aos="fade-up" data-aos-delay="100">
         <div class="project" *ngFor="let project of filteredProjects">
           <div class="project-inner rounded-5px">
-            <div class="project-front rounded-5px"
-                 [style.background-image]="'url(' + project.blackAndWhitePhotoLink + ')'">
+            <div class="project-front rounded-5px">
+              <img class="background" src="{{project.screenshotLink}}" alt="Project ScreenShot">
+              <div class="black-interim"></div>
               <p class="title">{{project.title}}</p>
               <mat-icon class="touch-icon" [svgIcon]="'touch'"></mat-icon>
             </div>
-            <div class="project-back rounded-5px"
-                 [style.background-image]="'url(' + project.colorPhotoLink + ')'">
+            <div class="project-back rounded-5px">
+              <img class="background" src="{{project.screenshotLink}}" alt="Project ScreenShot">
               <div class="overlay">
                 <div class="overlay__title">
                   <p class="title">{{project.title}}</p>
@@ -29,11 +30,9 @@
                 <div class="overlay__description">
                   <p class="description">{{project.description}}</p>
                 </div>
-                <div class="stack">
-                    <sds-carousel [slides]="project.stack" [initSlidesAmount]="4"></sds-carousel>
-                </div>
                 <div class="overlay__bottom">
                   <button mat-flat-button color="primary">Live Demo</button>
+                  <sds-carousel [slides]="project.stack" [initSlidesAmount]="4" [showTitles]="false"></sds-carousel>
                   <div class="icon-wrapper">
                     <mat-icon [svgIcon]="'github'"></mat-icon>
                   </div>

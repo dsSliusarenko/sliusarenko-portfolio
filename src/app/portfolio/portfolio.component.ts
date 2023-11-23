@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 import {environment} from "../../environments/environment";
 import {PROJECT_FILTERS, ProjectFilters, ProjectFiltersItem, Projects} from "./portfolio";
+import {fakeAsync} from "@angular/core/testing";
 
 @Component({
   selector: 'sds-portfolio',
@@ -27,4 +28,6 @@ export class PortfolioComponent{
     //     break;
     // }
   }
+
+  protected readonly fakeAsync = fakeAsync;
 }

@@ -261,13 +261,13 @@ body {
           background-color: white;
         }
 
-        .mat-button-toggle-focus-overlay {
+        .mat-button-toggle-focus-overlay, .mat-button-toggle-ripple {
           display: none;
         }
 
-        .mat-button-toggle-ripple {
-          display: none ;
-        }
+        //.mat-button-toggle-ripple {
+        //  display: none;
+        //}
 
         mat-button-toggle {
           border: none;
@@ -327,6 +327,7 @@ body {
         mat-icon {
           width: 3rem;
           height: 3rem;
+          color: white;
         }
 
         .touch-icon {
@@ -336,9 +337,22 @@ body {
         }
 
         .title {
+          text-shadow: 0 0 3px black;
           font-size: 2rem;
           font-weight: 600;
-          color: black;
+          color: white;
+        }
+
+        .black-interim {
+          @extend .interim;
+
+          background-color: rgba(black, 0.5);
+        }
+
+        .background {
+          @extend .background-project-image;
+
+          filter: grayscale(100%) blur(2px);
         }
       }
 
@@ -354,13 +368,12 @@ body {
           height: 50%;
           width: 100%;
           padding: 1rem;
-          background: rgba($gray-portfolio-overlay-background, 0.92);
-          border-bottom-left-radius: 5px;
-          border-bottom-right-radius: 5px;
+          background: rgba($blue-portfolio-overlay-background, 0.85);
+          border-bottom-left-radius: 3px;
+          border-bottom-right-radius: 3px;
 
           p {
             color: white;
-            //font-weight: bold;
             text-align: start;
             margin: 0;
           }
@@ -377,36 +390,10 @@ body {
             }
           }
 
-          &__description {
-            margin-top: 0.75rem;
-          }
-
-          //.stack {
-            //display: flex;
-            //align-items: center;
-            //
-            //.technology {
-            //  margin-right: 0.5rem;
-            //}
-            //
-            //.technology:last-child {
-            //  margin-right: 0;
-            //}
-            //
-            //mat-icon {
-            //  width: 25px;
-            //  height: 25px;
-            //}
-            //
-            //mat-icon:last-child {
-            //  margin-right: 0;
-            //}
-          //}
-
           &__bottom {
             display: flex;
             justify-content: space-between;
-            //margin-top: 1.25rem;
+            align-items: center;
 
             .icon-wrapper {
               display: flex;
@@ -432,9 +419,19 @@ body {
             }
 
             button {
-              background-color: $blue-basic;
+              background-color: white;
+              color: black;
+            }
+
+            button:hover {
+              transition: all 0.3s ease-in-out;
+              background-color: $gray-background-hover;
             }
           }
+        }
+
+        .background {
+          @extend .background-project-image;
         }
       }
 
@@ -729,21 +726,19 @@ body {
     .slide {
       display: flex;
       align-items: center;
-
       margin-right: 0.5rem;
       padding: 0.25rem 0.5rem 0.25rem 0.5rem;
       border-radius: 16px;
       background-color: $gray-basic;
-      color: #1D76ED;
 
       img {
-        margin-right: 0.5rem;
         width: 18px;
         height: 18px;
       }
 
       span {
-        color: #212121;
+        margin-left: 0.5rem;
+        color: $black-carousel-title;
       }
     }
 
@@ -753,7 +748,8 @@ body {
 
     .slide:hover {
       transition: 0.2s;
-      background-color: #e0e0e0;
+      cursor: pointer;
+      background-color: $gray-background-hover;
     }
   }
 
@@ -763,7 +759,7 @@ body {
   }
 
   mat-icon:hover {
-    color: $blue-basic;
+    color: black;
     transition: 0.3s;
     cursor: pointer;
   }
@@ -806,11 +802,26 @@ body {
   background-color: white;
 }
 
+.text-blue-transition {
+  color: $blue-basic;
+  transition: all 0.3s ease-in-out;
+}
+
 .rounded-5px {
   border-radius: 5px;
 }
 
-.text-blue-transition{
-  color: $blue-basic;
-  transition: all 0.3s ease-in-out;
+.interim {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.background-project-image {
+  @extend .rounded-5px;
+  @extend .interim;
+
+  background: no-repeat center;
+  background-size: cover;
 }

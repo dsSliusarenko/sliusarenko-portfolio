@@ -7,10 +7,12 @@ import {Technology} from "../../portfolio/portfolio";
   styleUrls: ['./carousel.component.scss'],
 })
 export class CarouselComponent implements OnChanges {
-  @Input() slides!: Technology[];
+  @Input() slides!: Technology[] | any[];
   @Input() initSlidesAmount!: number;
+  @Input() showTitles!: boolean;
+
+  visibleSlides!: Technology[] | any[];
   currentIndex = 0;
-  visibleSlides!: Technology[];
 
   ngOnChanges(): void {
     this.updateVisibleSlides();
