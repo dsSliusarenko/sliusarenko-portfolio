@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {environment} from "../../environments/environment";
+import {environment} from "../../../environments/environment";
 import {PROJECT_FILTERS, ProjectFilters, ProjectFiltersItem, Project, Technology, Projects} from "./portfolio";
 
 @Component({

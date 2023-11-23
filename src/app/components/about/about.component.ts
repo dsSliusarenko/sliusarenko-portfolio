@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {environment} from "../../environments/environment";
+import {environment} from "../../../environments/environment";
 import {DETAILS, PersonalDetail} from "./personal-details";
 import {Fact, FACTS} from "./facts";
 

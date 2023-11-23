@@ -209,5 +209,9 @@ export class IconModule {
       'arrow-left',
       domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-arrow-left.svg'),
     );
+    matIconRegistry.addSvgIcon(
+      'service',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-service.svg'),
+    );
   }
 }

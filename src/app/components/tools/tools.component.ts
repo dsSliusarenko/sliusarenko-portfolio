@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {ListType, TOOLS} from "./tools";
-import {environment} from "../../environments/environment";
+import {environment} from "../../../environments/environment";
 
 @Component({
   selector: 'sds-tools',

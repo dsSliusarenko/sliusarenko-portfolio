@@ -31,6 +31,11 @@ export const navigationItems: Navigation[] = [
     icon: 'portfolio',
   },
   {
+    label: 'Services',
+    path: 'services',
+    icon: 'service',
+  },
+  {
     label: 'Contact',
     path: 'contact',
     icon: 'mail-forward',

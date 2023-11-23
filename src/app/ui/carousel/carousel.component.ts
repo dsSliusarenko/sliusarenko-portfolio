@@ -1,5 +1,5 @@
 import {Component, Input, OnChanges} from '@angular/core';
-import {Technology} from "../../portfolio/portfolio";
+import {Technology} from "../../components/portfolio/portfolio";
 
 @Component({
   selector: 'sds-carousel',

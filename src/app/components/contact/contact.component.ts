@@ -1,11 +1,11 @@
 import {Component, OnInit} from '@angular/core';
-import {environment} from "../../environments/environment";
+import {environment} from "../../../environments/environment";
 import {REFERENCES} from "./references";
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
-import {EmailService} from "../services/email.service";
-import {EmailBody} from "../services/email";
+import {EmailService} from "../../services/email.service";
+import {EmailBody} from "../../services/email";
 import {MatSnackBar} from "@angular/material/snack-bar";
-import {SnackBarComponent} from "../ui/snack-bar/snack-bar.component";
+import {SnackBarComponent} from "../../ui/snack-bar/snack-bar.component";
 
 @Component({
   selector: 'sds-contact',
