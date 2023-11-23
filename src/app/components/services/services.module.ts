@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ServicesComponent } from './services.component';
+import {MatIconModule} from "@angular/material/icon";
+import {ToolsModule} from "../tools/tools.module";
 
 
 
@@ -11,8 +13,10 @@ import { ServicesComponent } from './services.component';
     exports: [
         ServicesComponent
     ],
-    imports: [
-        CommonModule
-    ]
+  imports: [
+    CommonModule,
+    MatIconModule,
+    ToolsModule
+  ]
 })
 export class ServicesModule { }

@@ -1,1 +1,25 @@
-<p>services works!</p>
+<div class="services white-background">
+  <div class="container">
+    <span class="section-title">{{environment.sections.services.title}}</span>
+    <span class="section-description">{{environment.sections.services.description}}</span>
+    <div class="services-section">
+
+<!--      <sds-tools-list></sds-tools-list>-->
+      <div class="tools-list">
+        <div class="tool" *ngFor="let service of SERVICES">
+          <div class="tool__icon">
+            <div class="icon-container">
+              <mat-icon [svgIcon]="service.icon"></mat-icon>
+            </div>
+          </div>
+          <div class="tool__information">
+            <a href="" class="title" target="_blank">
+              {{service.title}}
+            </a>
+            <span class="description">{{service.description}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

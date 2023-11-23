@@ -11,7 +11,8 @@ import {MatIconModule} from "@angular/material/icon";
     ToolsListComponent
   ],
   exports: [
-    ToolsComponent
+    ToolsComponent,
+    ToolsListComponent
   ],
   imports: [
     CommonModule,

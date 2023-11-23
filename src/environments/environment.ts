@@ -38,6 +38,10 @@ export const environment = {
       title: 'Portfolio',
       description: 'In this Portfolio section, you can explore examples of projects I have completed. Here, you\'ll find a showcase of my work, allowing you to evaluate the use of various tools and libraries in my projects.'
     },
+    services: {
+      title: 'Services',
+      description: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus pharetra elit nec nulla consequat, eu efficitur nisl fermentum.'
+    },
     contact: {
       title: 'Contact',
       description: 'You can find various ways to get in touch with me. Whether through email or a contact form, I\'m always available for communication and inquiries. Feel free to reach out with any questions or opportunities you\'d like to discuss.'
@@ -71,7 +75,6 @@ export const environment = {
       ]
     }
   },
-
   education: {
     speciality: 'BACHELOR OF ECONOMIC CYBERNETICS & COMPUTER SCIENCE',
     years: '2014 - 2018',

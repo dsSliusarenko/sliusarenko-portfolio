@@ -454,7 +454,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 3rem 0 5rem 0;
+    padding-top: 3rem;
 
     &__references {
       display: flex;
@@ -719,6 +719,14 @@ body {
   }
 }
 
+.services {
+  .services-section {
+    //display: grid;
+    //grid-template-columns: repeat(3, 1fr);
+    //grid-gap: 2rem;
+  }
+}
+
 .carousel {
   display: flex;
   align-items: center;
@@ -770,12 +778,12 @@ body {
   }
 }
 
-@mixin section {
-  padding: 4rem 0 2rem 0;
+.section-padding {
+  padding: 4rem 0 3rem 0;
 }
 
-.portfolio, .resume, .tools, .contact, .about {
-  @include section();
+.about, .resume, .tools, .portfolio, .services, .contact {
+  @extend .section-padding;
 }
 
 .snack-bar {
