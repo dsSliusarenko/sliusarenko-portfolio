@@ -7,7 +7,7 @@ export interface Fact {
 export const FACTS: Fact[] = [
   {
     icon: 'project',
-    metric: 2300,
+    metric: 10000,
     description: '<strong>High-quality and maintainable</strong> lines of code written'
   },
   {
