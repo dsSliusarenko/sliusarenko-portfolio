@@ -8,7 +8,7 @@ import {BreakpointService} from "./services/breakpoint.service";
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements AfterViewInit, OnDestroy{
-  title = 'sliusarenko-portfolio';
+  title = 'Dmytro Sliusarenko';
   isDrawerOpened!: boolean;
 
   constructor(private breakpointService: BreakpointService) {

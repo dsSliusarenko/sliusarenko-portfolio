@@ -868,5 +868,400 @@ body {
 }
 
 @media (max-width: 480px) {
+  @mixin flex-colum {
+    display: flex;
+    flex-direction: column;
+  }
 
+  .container {
+    @include flex-colum();
+
+    max-width: none;
+    width: auto;
+  }
+
+  .about {
+
+    .container {
+
+      .section-title {
+
+      }
+
+      .section-description {
+
+      }
+
+      .about-section {
+        @include flex-colum();
+
+        .about-section__photo {
+
+          img {
+
+          }
+        }
+
+        .about-section__description {
+
+          .profile-title {
+
+          }
+
+          .short-description {
+
+          }
+
+          .personal-details {
+            @include flex-colum();
+
+            .detail {
+
+              .icon {
+
+              }
+
+              .detail__title {
+
+              }
+
+              .detail__description {
+
+              }
+            }
+          }
+
+          .full-description {
+
+          }
+        }
+      }
+
+      .facts-section {
+        @include flex-colum();
+
+        .fact {
+
+          mat-icon {
+
+          }
+
+          .fact__metric {
+
+            span {
+
+            }
+          }
+
+          .fact__description {
+
+          }
+        }
+      }
+    }
+  }
+
+  .services {
+    .container {
+      .section-title {
+
+      }
+
+      .section-description {
+
+      }
+
+      .services-section {
+
+        .services-list {
+          @include flex-colum();
+
+          .tool {
+
+            .tool__icon {
+
+              .icon-container {
+
+                mat-icon {
+
+                }
+              }
+            }
+
+            .tool__information {
+
+              .title {
+
+              }
+
+              .description {
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .portfolio {
+
+    .container {
+
+      .section-title {
+
+      }
+
+      .section-description {
+
+      }
+
+      .projects-container {
+
+        .filters {
+
+          mat-button-toggle-group {
+
+            mat-button-toggle {
+
+            }
+          }
+        }
+
+        .projects {
+          @include flex-colum();
+
+          .project {
+            width: auto;
+
+            .project-inner {
+
+              .project-front {
+
+                .background {
+
+                }
+
+                .black-interim {
+
+                }
+
+                .title {
+
+                }
+
+                .touch-icon {
+
+                }
+              }
+
+              .project-back {
+
+                .background {
+
+                }
+
+                .overlay {
+
+                  .overlay__title {
+
+                    .title {
+
+                    }
+                  }
+
+                  .overlay__description {
+
+                    .description {
+
+                    }
+                  }
+
+                  .overlay__bottom {
+
+                    button {
+
+                    }
+
+                    sds-carousel {
+
+                    }
+
+                    .icon-wrapper {
+
+                      mat-icon {
+
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .tools {
+
+    //.container {
+    .mat-mdc-tab-labels {
+      @include flex-colum();
+
+    }
+
+    //}
+
+    .tools-list {
+      @include flex-colum();
+
+      .tool {
+
+        .tool__icon {
+
+          .icon-container {
+
+            mat-icon {
+
+            }
+          }
+        }
+
+        .tool__information {
+
+          .title {
+
+          }
+
+          .description {
+
+          }
+        }
+      }
+    }
+  }
+
+  .contact {
+
+    .container {
+
+      .section-title {
+
+      }
+
+      .section-description {
+
+      }
+
+      .contact-section {
+        @include flex-colum();
+        //align-items: center;
+
+        .contact-section__references {
+
+          .reference {
+
+            .reference__icon {
+
+              .icon-container {
+
+                .icon {
+
+                }
+              }
+            }
+
+            .reference__description {
+
+              .title {
+
+                span {
+
+                }
+              }
+
+              .content {
+
+                span {
+
+                }
+              }
+            }
+          }
+        }
+
+        .contact-section__email {
+
+          .form {
+
+            .form__first-line {
+
+              mat-form-field {
+
+                mat-label {
+
+                }
+
+                input {
+
+                }
+
+                mat-hint {
+
+                }
+              }
+            }
+
+            .form__second-line {
+
+              mat-form-field {
+
+                mat-label {
+
+                }
+
+                input {
+
+                }
+
+                mat-hint {
+
+                }
+              }
+            }
+
+            .form__third-line {
+
+              mat-form-field {
+
+                mat-label {
+
+                }
+
+                input {
+
+                }
+
+                mat-hint {
+
+                }
+              }
+            }
+
+            .form__fourth-line {
+
+              button {
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .section-description {
+    overflow-wrap: break-word;
+  }
 }
