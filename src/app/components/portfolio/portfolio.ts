@@ -14,7 +14,7 @@ export interface Technology {
 
 export const Projects: Project[] = [
   {
-    title: 'Global Flow Mat + Prime',
+    title: 'My own website',
     description: 'A complex web CMS platform streamlining the process of creating and approving advertising content among international branches process of creating and approving advertising',
     linkGit: '',
     linkLive: 'https://www.shecodes.io/athena/1402-how-to-use-css-for-hover-on-a-text',
@@ -47,11 +47,11 @@ export const Projects: Project[] = [
     ]
   },
   {
-    title: 'Global Flow Prime',
+    title: 'Flips And Match',
     description: 'Sed sodales, justo eu suscipit scelerisque, mi nisl laoreet felis, id viverra mi ligula a eros. Vestibulum consectetur risus id libero vulputate, sit amet pulvinar odio bibendum',
-    linkGit: '',
-    linkLive: '',
-    screenshotLink: 'assets/images/projects/color2.jpg',
+    linkGit: 'https://github.com/dsSliusarenko/flip-and-match',
+    linkLive: 'flip-and-match.netlify.app',
+    screenshotLink: 'assets/images/projects/flips-and-match.jpg',
     technologies: [
       {
         title: 'TS',

@@ -1,5 +1,5 @@
 <mat-drawer-container style="position: relative">
-  <mat-drawer mode="side" opened style="position: fixed; border:none">
+  <mat-drawer mode="side" [opened]="isDrawerOpened" style="position: fixed; border:none">
     <sds-side-bar></sds-side-bar>
   </mat-drawer>
   <mat-drawer-content>
