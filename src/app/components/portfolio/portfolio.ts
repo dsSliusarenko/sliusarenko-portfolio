@@ -14,23 +14,23 @@ export interface Technology {
 
 export const Projects: Project[] = [
   {
-    title: 'My own website',
-    description: 'A complex web CMS platform streamlining the process of creating and approving advertising content among international branches process of creating and approving advertising',
+    title: 'My website',
+    description: 'Crafted on Angular, my personal website boasts responsive design. Explore my portfolio and discover more about me and my diverse array of projects',
     linkGit: 'https://github.com/dsSliusarenko/sliusarenko-portfolio',
     linkLive: 'https://dmytro-sliusarenko.netlify.app',
-    screenshotLink: 'assets/images/projects/color.jpg',
+    screenshotLink: 'assets/images/projects/my-own-website.jpg',
     technologies: [
+      {
+        title: 'Angular',
+        iconUrl: 'https://angular.io/assets/images/logos/angular/angular.svg'
+      },
       {
         title: 'TS',
         iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/512px-Typescript_logo_2020.svg.png?20221110153201'
       },
       {
         title: 'MATERIAL',
-        iconUrl: 'https://angular.io/assets/images/logos/angular/angular.svg'
-      },
-      {
-        title: 'PRIME_NG',
-        iconUrl: 'https://i0.wp.com/www.primefaces.org/wp-content/uploads/2018/05/primeng-logo.png?ssl=1'
+        iconUrl: 'https://material.angular.io/assets/img/angular-material-logo.svg'
       },
       {
         title: 'CSS',
@@ -41,16 +41,16 @@ export const Projects: Project[] = [
         iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/archive/6/61/20111018085326%21HTML5_logo_and_wordmark.svg/120px-HTML5_logo_and_wordmark.svg.png'
       },
       {
-        title: 'NgRx',
-        iconUrl: 'https://seeklogo.com/images/N/ngrx-logo-D484A6B4B3-seeklogo.com.png'
+        title: 'RxJS',
+        iconUrl: 'https://cdn.worldvectorlogo.com/logos/rxjs-1.svg'
       }
     ]
   },
   {
     title: 'Flips And Match',
-    description: 'Sed sodales, justo eu suscipit scelerisque, mi nisl laoreet felis, id viverra mi ligula a eros. Vestibulum consectetur risus id libero vulputate, sit amet pulvinar odio bibendum',
+    description: 'Built using Angular with cross-platform support, this project is a memory game showcasing symbol placement on cards. Engage in a fun challenge across devices!',
     linkGit: 'https://github.com/dsSliusarenko/flip-and-match',
-    linkLive: 'flip-and-match.netlify.app',
+    linkLive: 'https://flip-and-match.netlify.app',
     screenshotLink: 'assets/images/projects/flips-and-match.jpg',
     technologies: [
       {

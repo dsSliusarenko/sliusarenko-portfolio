@@ -1,10 +1,9 @@
-import { NgModule } from '@angular/core';
+import {NgModule} from '@angular/core';
 import {CommonModule, NgOptimizedImage} from '@angular/common';
-import { CarouselComponent } from './carousel.component';
+import {CarouselComponent} from './carousel.component';
 import {MatChipsModule} from "@angular/material/chips";
 import {MatIconModule} from "@angular/material/icon";
-
-
+import {AngularMaterialModule} from "../angular-material/angular-material.module";
 
 @NgModule({
   declarations: [
@@ -12,6 +11,7 @@ import {MatIconModule} from "@angular/material/icon";
   ],
   imports: [
     CommonModule,
+    AngularMaterialModule,
     MatChipsModule,
     MatIconModule,
     NgOptimizedImage
@@ -20,4 +20,5 @@ import {MatIconModule} from "@angular/material/icon";
     CarouselComponent
   ]
 })
-export class CarouselModule { }
+export class CarouselModule {
+}
