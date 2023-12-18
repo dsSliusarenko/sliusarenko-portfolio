@@ -16,12 +16,15 @@ import {IconModule} from "./ui/icon/icon.module";
 import {NgOptimizedImage} from "@angular/common";
 import {CountUpModule} from "ngx-countup";
 import {ServicesModule} from "./components/services/services.module";
+import {MobileMenuComponent} from './ui/mobile-menu-toggle/mobile-menu.component';
+import {NavigationModule} from "./ui/navigation/navigation.module";
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroComponent,
     AboutComponent,
+    MobileMenuComponent,
   ],
   imports: [
     BrowserModule,
@@ -37,7 +40,8 @@ import {ServicesModule} from "./components/services/services.module";
     ContactModule,
     NgOptimizedImage,
     CountUpModule,
-    ServicesModule
+    ServicesModule,
+    NavigationModule
   ],
   providers: [],
   bootstrap: [AppComponent]

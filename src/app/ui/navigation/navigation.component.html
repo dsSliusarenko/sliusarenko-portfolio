@@ -1,6 +1,6 @@
 <mat-nav-list *ngIf="navigationList$ | async as navigationList">
   <ng-container *ngFor="let listItem of navigationList">
-    <a mat-list-item class="navigation-element" [routerLink]="['/', listItem?.path]" routerLinkActive="is-active">
+    <a mat-list-item class="navigation-element" [routerLink]="['/', listItem?.path]" routerLinkActive="is-active" (click)="mobileMenuClose()">
       <mat-icon class="icon" [svgIcon]="listItem?.icon ?? ''"></mat-icon>
       <span class="text">{{listItem?.label}}</span>
     </a>

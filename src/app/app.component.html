@@ -1,5 +1,5 @@
 <mat-drawer-container style="position: relative">
-  <mat-drawer mode="side" [opened]="isDrawerOpened" style="position: fixed; border:none">
+  <mat-drawer mode="side" [opened]="isDrawerOpened" style="position:fixed; border:none">
     <sds-side-bar></sds-side-bar>
   </mat-drawer>
   <mat-drawer-content>
@@ -25,6 +25,9 @@
     </div>
     <div id="contact">
       <sds-contact></sds-contact>
+    </div>
+    <div class="mobile-menu-toggle" *ngIf="!isDrawerOpened">
+      <sds-mobile-menu></sds-mobile-menu>
     </div>
   </mat-drawer-content>
 </mat-drawer-container>

@@ -1,0 +1,9 @@
+<div class="mobile-menu">
+  <div class="mobile-menu__icon" (click)="toggleMobileMenuView()">
+    <mat-icon class="hamburger" [svgIcon]="'menu'" *ngIf="!isMenuShowing"></mat-icon>
+    <mat-icon class="close" [svgIcon]="'close'" *ngIf="isMenuShowing"></mat-icon>
+  </div>
+  <div class="mobile-menu__navigation">
+    <sds-navigation *ngIf="isMenuShowing"></sds-navigation>
+  </div>
+</div>

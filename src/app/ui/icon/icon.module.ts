@@ -249,5 +249,13 @@ export class IconModule {
       'education',
       domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-education.svg'),
     );
+    matIconRegistry.addSvgIcon(
+      'menu',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-menu.svg'),
+    );
+    matIconRegistry.addSvgIcon(
+      'close',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-close.svg'),
+    );
   }
 }

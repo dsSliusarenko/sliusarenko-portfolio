@@ -7,7 +7,7 @@ import {BreakpointService} from "./services/breakpoint.service";
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements AfterViewInit, OnDestroy{
+export class AppComponent implements AfterViewInit, OnDestroy {
   title = 'Dmytro Sliusarenko';
   isDrawerOpened!: boolean;
 
