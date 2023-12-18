@@ -7,8 +7,8 @@ export interface PersonalDetail {
 
 export const DETAILS: PersonalDetail[] = [
   {
-    title: 'Birthday',
-    description: personalInformation.myBirthday
+    title: 'Main technologies',
+    description: 'Angular, TypeScript, NestJS'
   },
   {
     title: 'Phone',
@@ -27,7 +27,7 @@ export const DETAILS: PersonalDetail[] = [
     description: personalInformation.myLocation
   },
   {
-    title: 'Test',
-    description: 'Testtest'
+    title: 'Open to',
+    description: 'Full time, Contract'
   },
 ]
