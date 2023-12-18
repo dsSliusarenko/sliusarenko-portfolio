@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
-import {environment} from "../../../environments/environment";
 import {PROJECT_FILTERS, ProjectFilters, ProjectFiltersItem, Project, Technology, Projects} from "./portfolio";
 import {BreakpointService} from "../../services/breakpoint.service";
+import {personalInformation} from "../../personal-information";
 
 @Component({
   selector: 'sds-portfolio',
@@ -9,7 +9,7 @@ import {BreakpointService} from "../../services/breakpoint.service";
   styleUrls: ['./portfolio.component.scss']
 })
 export class PortfolioComponent {
-  protected environment = environment;
+  protected readonly personalInformation = personalInformation;
   protected Projects: Project[] = Projects;
   protected PROJECT_FILTERS: ProjectFiltersItem[] = PROJECT_FILTERS;
   protected ProjectFilters = ProjectFilters;

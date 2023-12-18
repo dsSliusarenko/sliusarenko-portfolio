@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {ListType} from "./tools";
-import {environment} from "../../../environments/environment";
+import {personalInformation} from "../../personal-information";
 
 @Component({
   selector: 'sds-tools',
@@ -9,5 +9,5 @@ import {environment} from "../../../environments/environment";
 })
 export class ToolsComponent {
   protected readonly ListType = ListType;
-  protected readonly environment = environment;
+  protected readonly personalInformation = personalInformation;
 }

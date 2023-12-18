@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
-import {environment} from "../../../environments/environment";
 import {DETAILS, PersonalDetail} from "./personal-details";
 import {Fact, FACTS} from "./facts";
+import {personalInformation} from "../../personal-information";
 
 @Component({
   selector: 'sds-about',
@@ -9,7 +9,7 @@ import {Fact, FACTS} from "./facts";
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent {
-  protected readonly environment = environment;
+  protected readonly personalInformation = personalInformation;
   protected readonly DETAILS: PersonalDetail[] = DETAILS;
   protected readonly FACTS: Fact[] = FACTS;
 }

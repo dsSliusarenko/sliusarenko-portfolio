@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {environment} from "../../../environments/environment";
+import {personalInformation} from "../../personal-information";
 
 @Component({
   selector: 'sds-hero',
@@ -7,7 +7,7 @@ import {environment} from "../../../environments/environment";
   styleUrls: ['./hero.component.scss'],
 })
 export class HeroComponent implements OnInit {
-  protected readonly environment = environment;
+  protected readonly personalInformation = personalInformation;
 
   textList: string[] = ["Front-End Developer", "Angular Developer", "Software Developer"];
   currentIndex: number = 0;

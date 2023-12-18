@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {environment} from "../../../environments/environment";
+import {personalInformation} from "../../personal-information";
 
 @Component({
   selector: 'sds-resume',
@@ -7,5 +7,5 @@ import {environment} from "../../../environments/environment";
   styleUrls: ['./resume.component.scss']
 })
 export class ResumeComponent {
-  protected readonly environment = environment;
+  protected readonly personalInformation = personalInformation;
 }

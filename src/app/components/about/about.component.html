@@ -1,14 +1,14 @@
 <div class="about white-background">
   <div class="container">
-    <span class="section-title">{{environment.sections.about.title}}</span>
-    <span class="section-description">{{environment.sections.about.description}}</span>
+    <span class="section-title">{{personalInformation.sections.about.title}}</span>
+    <span class="section-description">{{personalInformation.sections.about.description}}</span>
     <div class="about-section">
       <div class="about-section__photo" data-aos="fade-up" data-aos-duration="800">
-        <img ngSrc="{{ environment.imageProfilePortrait }}" alt="Plate photo" height="350" width="350">
+        <img ngSrc="{{ personalInformation.imageProfilePortrait }}" alt="Plate photo" height="350" width="350">
       </div>
       <div class="about-section__description" data-aos="fade-down" data-aos-duration="800">
-        <span class="profile-title">{{environment.profileTitle}}</span>
-        <span class="short-description">{{environment.profileShortDescription}}</span>
+        <span class="profile-title">{{personalInformation.profileTitle}}</span>
+        <span class="short-description">{{personalInformation.profileShortDescription}}</span>
         <div class="personal-details">
           <div class="detail" *ngFor="let detail of DETAILS">
             <mat-icon class="icon" [svgIcon]="'priority'"></mat-icon>
@@ -16,11 +16,11 @@
             <span class="detail__description">{{detail.description}}</span>
           </div>
         </div>
-        <span class="full-description">{{environment.profileFullDescription}}</span>
+        <span class="full-description">{{personalInformation.profileFullDescription}}</span>
       </div>
     </div>
-    <span class="section-title">{{environment.sections.facts.title}}</span>
-    <span class="section-description">{{environment.sections.facts.description}}</span>
+    <span class="section-title">{{personalInformation.sections.facts.title}}</span>
+    <span class="section-description">{{personalInformation.sections.facts.description}}</span>
     <div class="facts-section">
       <div class="fact" *ngFor="let fact of FACTS; let i = index" [attr.data-aos]="'fade-up'" [attr.data-aos-delay]="i * 100">
         <mat-icon [svgIcon]="fact.icon"></mat-icon>

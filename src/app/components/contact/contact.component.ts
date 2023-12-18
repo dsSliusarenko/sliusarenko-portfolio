@@ -1,11 +1,11 @@
 import {Component, OnInit} from '@angular/core';
-import {environment} from "../../../environments/environment";
-import {REFERENCES} from "./references";
+import {Reference, REFERENCES} from "./references";
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {EmailService} from "../../services/email.service";
 import {EmailBody} from "../../services/email";
 import {MatSnackBar} from "@angular/material/snack-bar";
 import {SnackBarComponent} from "../../ui/snack-bar/snack-bar.component";
+import {personalInformation} from "../../personal-information";
 
 @Component({
   selector: 'sds-contact',
@@ -13,10 +13,11 @@ import {SnackBarComponent} from "../../ui/snack-bar/snack-bar.component";
   styleUrls: ['./contact.component.scss'],
 })
 export class ContactComponent implements OnInit {
-  mailForm: FormGroup = this.formBuilder.group({});
+  protected readonly REFERENCES: Reference[] = REFERENCES;
+  protected readonly personalInformation = personalInformation;
 
-  protected readonly environment = environment;
-  protected readonly REFERENCES = REFERENCES;
+
+  mailForm: FormGroup = this.formBuilder.group({});
 
   constructor(private formBuilder: FormBuilder, private emailService: EmailService, private _snackBar: MatSnackBar) {
   }

@@ -1,4 +1,4 @@
-import {environment} from "../../../environments/environment";
+import {personalInformation} from "../../personal-information";
 
 export interface Reference {
   title: string,
@@ -9,17 +9,17 @@ export interface Reference {
 export const REFERENCES: Reference [] = [
   {
     title: 'Location',
-    content: environment.myLocation,
+    content: personalInformation.myLocation,
     icon: 'location'
   },
   {
     title: 'Email',
-    content: environment.myEmail,
+    content: personalInformation.myEmail,
     icon: 'mail-outline'
   },
   {
     title: 'Call',
-    content: environment.myPhone,
+    content: personalInformation.myPhone,
     icon: 'phone'
   }
 ]

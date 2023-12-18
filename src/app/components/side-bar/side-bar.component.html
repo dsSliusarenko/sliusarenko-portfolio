@@ -1,29 +1,29 @@
 <div class="side-bar">
   <div class="side-bar__profile">
     <div class="avatar">
-      <img ngSrc="{{ environment.imageProfileAddress }}" alt="Plate photo" height="104" width="104">
+      <img ngSrc="{{ personalInformation.imageProfileAddress }}" alt="Plate photo" height="104" width="104">
     </div>
     <div class="name">
-      <span>{{environment.myName}}</span>
+      <span>{{ personalInformation.myName }}</span>
     </div>
     <div class="links">
       <div class="link">
-        <a href="{{environment.gitHubUrl}}" class="icon" target="_blank">
+        <a href="{{ personalInformation.gitHubUrl }}" class="icon" target="_blank">
           <mat-icon class="icon" [svgIcon]="'github'"></mat-icon>
         </a>
       </div>
       <div class="link">
-        <a href="{{environment.linkedInUrl}}" class="icon" target="_blank">
+        <a href="{{ personalInformation.linkedInUrl }}" class="icon" target="_blank">
           <mat-icon class="icon" [svgIcon]="'linkedin'"></mat-icon>
         </a>
       </div>
       <div class="link">
-        <a href="{{environment.instagramUrl}}" class="icon" target="_blank">
+        <a href="{{ personalInformation.instagramUrl }}" class="icon" target="_blank">
           <mat-icon class="icon" [svgIcon]="'instagram'"></mat-icon>
         </a>
       </div>
       <div class="link">
-        <a href="{{environment.discordUrl}}" class="icon" target="_blank">
+        <a href="{{ personalInformation.discordUrl }}" class="icon" target="_blank">
           <mat-icon class="icon" [svgIcon]="'discord'"></mat-icon>
         </a>
       </div>

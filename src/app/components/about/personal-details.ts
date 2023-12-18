@@ -1,4 +1,4 @@
-import {environment} from "../../../environments/environment";
+import {personalInformation} from "../../personal-information";
 
 export interface PersonalDetail {
   title: string,
@@ -8,11 +8,11 @@ export interface PersonalDetail {
 export const DETAILS: PersonalDetail[] = [
   {
     title: 'Birthday',
-    description: environment.myBirthday
+    description: personalInformation.myBirthday
   },
   {
     title: 'Phone',
-    description: environment.myPhone
+    description: personalInformation.myPhone
   },
   {
     title: 'Degree',
@@ -20,11 +20,11 @@ export const DETAILS: PersonalDetail[] = [
   },
   {
     title: 'Email',
-    description: environment.myEmail
+    description: personalInformation.myEmail
   },
   {
     title: 'City',
-    description: environment.myLocation
+    description: personalInformation.myLocation
   },
   {
     title: 'Test',

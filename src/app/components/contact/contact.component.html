@@ -1,7 +1,7 @@
 <div class="contact gray-background">
   <div class="container">
-    <span class="section-title">{{environment.sections.contact.title}}</span>
-    <span class="section-description">{{environment.sections.contact.description}}</span>
+    <span class="section-title">{{personalInformation.sections.contact.title}}</span>
+    <span class="section-description">{{personalInformation.sections.contact.description}}</span>
     <div class="contact-section" data-aos="fade-in">
       <div class="contact-section__references">
         <div class="reference" *ngFor="let reference of REFERENCES">
@@ -60,7 +60,6 @@
             <button mat-flat-button color="primary" type="submit" [disabled]="!mailForm.valid">Seng Message</button>
           </div>
         </form>
-
       </div>
     </div>
   </div>
