@@ -893,492 +893,106 @@ body {
   }
 
   .about {
+    .about-section {
+      @include flex-colum();
 
-    .container {
+      .about-section__photo {
 
-      .section-title {
-
-      }
-
-      .section-description {
-
-      }
-
-      .about-section {
-        @include flex-colum();
-
-        .about-section__photo {
-
-          img {
-            width: 100%;
-          }
-        }
-
-        .about-section__description {
-          margin-top: 2rem;
-          padding: 0;
-
-          .profile-title {
-
-          }
-
-          .short-description {
-
-          }
-
-          .personal-details {
-            @include flex-colum();
-
-            .detail {
-
-              .icon {
-
-              }
-
-              .detail__title {
-
-              }
-
-              .detail__description {
-
-              }
-            }
-          }
-
-          .full-description {
-
-          }
+        img {
+          width: 100%;
         }
       }
 
-      .facts-section {
-        //@include flex-colum();
-        //align-items: center;
+      .about-section__description {
+        margin-top: 2rem;
+        padding: 0;
 
-        //display: grid;
-        //grid-template-columns: repeat(2, 1fr);
-        //grid-gap: 20px;
-        ////grid-row-gap: 40px;
+        .personal-details {
+          @include flex-colum();
+        }
+      }
+    }
 
-        display: flex;
-        justify-content: space-between;
-        //align-items: center;
-        //column-gap: 20px;
-        flex-wrap: wrap;
+    .facts-section {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
 
-        .fact {
-          //display: flex;
-          //width: 50%;
+      .fact {
+        mat-icon {
+          display: none;
+        }
 
-          mat-icon {
-            //width: 1rem;
-            //height: 1rem;
-            display: none;
-          }
-
-          .fact__metric {
-
-            span {
-              font-size: x-large;
-            }
-          }
-
-          .fact__description {
-
+        .fact__metric {
+          span {
+            font-size: x-large;
           }
         }
       }
+    }
 
-      .facts-section > * {
-        margin: 1em 0;
-      }
+    .facts-section > * {
+      margin: 1em 0;
     }
   }
 
   .services {
-    .container {
-      .section-title {
+    .services-section {
+      .services-list {
+        @include flex-colum();
 
-      }
-
-      .section-description {
-
-      }
-
-      .services-section {
-
-        .services-list {
-          @include flex-colum();
-
-          margin-top: 1rem;
-
-          .tool {
-
-            .tool__icon {
-
-              .icon-container {
-
-                mat-icon {
-
-                }
-              }
-            }
-
-            .tool__information {
-
-              .title {
-
-              }
-
-              .description {
-
-              }
-            }
-          }
-        }
+        margin-top: 1rem;
       }
     }
   }
 
   .portfolio {
+    .projects-container {
+      .projects {
+        @include flex-colum();
 
-    .container {
-
-      .section-title {
-
-      }
-
-      .section-description {
-
-      }
-
-      .projects-container {
-
-        .filters {
-
-          mat-button-toggle-group {
-
-            mat-button-toggle {
-
-            }
-          }
-        }
-
-        .projects {
-          @include flex-colum();
-
-          .project {
-            width: auto;
-
-            .project-inner {
-
-              .project-front {
-
-                .background {
-
-                }
-
-                .black-interim {
-
-                }
-
-                .title {
-
-                }
-
-                .touch-icon {
-
-                }
-              }
-
-              .project-back {
-                //width: auto;
-
-                .background {
-
-                }
-
-                .overlay {
-                  //width: auto;
-
-                  .overlay__title {
-
-                    .title {
-
-                    }
-                  }
-
-                  .overlay__description {
-
-                    .description {
-
-                    }
-                  }
-
-                  .overlay__bottom {
-
-                    button {
-
-                    }
-
-                    sds-carousel {
-
-                    }
-
-                    .icon-wrapper {
-
-                      mat-icon {
-
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
+        .project {
+          width: auto;
         }
       }
     }
   }
 
   .resume {
+    .resume-section {
+      display: flex;
+      flex-direction: column;
 
-    .container {
-
-      .section-title {
-
+      .resume-section__summary {
+        width: auto;
       }
 
-      .section-description {
-
-      }
-
-      .resume-section {
-        display: flex;
-        flex-direction: column;
-
-        .resume-section__summary {
-          width: auto;
-
-          .resume-title {
-
-          }
-
-          .resume-item {
-            //width: 100%;
-
-            h4 {
-
-            }
-
-            p {
-
-              em {
-
-              }
-            }
-
-            ul {
-
-              li {
-
-              }
-            }
-          }
-        }
-
-        .resume-section__experience {
-          width: auto;
-
-          .resume-title {
-
-          }
-
-          .resume-item {
-
-            h4 {
-
-            }
-
-            h5 {
-
-            }
-
-            p {
-
-              em {
-
-              }
-            }
-
-            ul {
-
-              li {
-
-              }
-            }
-          }
-        }
+      .resume-section__experience {
+        width: auto;
       }
     }
   }
 
   .tools {
-
-    //.container {
     .mat-mdc-tab-labels {
       @include flex-colum();
-
     }
-
-    //}
 
     .tools-list {
       @include flex-colum();
-
-      .tool {
-
-        .tool__icon {
-
-          .icon-container {
-
-            mat-icon {
-
-            }
-          }
-        }
-
-        .tool__information {
-
-          .title {
-
-          }
-
-          .description {
-
-          }
-        }
-      }
     }
   }
 
   .contact {
-    //padding-bottom: 2rem;
-    .container {
+    .contact-section {
+      @include flex-colum();
 
-      .section-title {
+      align-items: center;
+      padding-top: 0;
 
-      }
-
-      .section-description {
-
-      }
-
-      .contact-section {
-        @include flex-colum();
-
-        align-items: center;
-
-        .contact-section__references {
-          .reference {
-
-            .reference__icon {
-
-              .icon-container {
-
-                .icon {
-
-                }
-              }
-            }
-
-            .reference__description {
-
-              .title {
-
-                span {
-
-                }
-              }
-
-              .content {
-
-                span {
-
-                }
-              }
-            }
-          }
-        }
-
-        .contact-section__email {
-          margin: 0;
-          width: 100%;
-
-          .form {
-
-            .form__first-line {
-
-              mat-form-field {
-
-                mat-label {
-
-                }
-
-                input {
-
-                }
-
-                mat-hint {
-
-                }
-              }
-            }
-
-            .form__second-line {
-
-              mat-form-field {
-
-                mat-label {
-
-                }
-
-                input {
-
-                }
-
-                mat-hint {
-
-                }
-              }
-            }
-
-            .form__third-line {
-
-              mat-form-field {
-
-                mat-label {
-
-                }
-
-                input {
-
-                }
-
-                mat-hint {
-
-                }
-              }
-            }
-
-            .form__fourth-line {
-
-              button {
-
-              }
-            }
-          }
-        }
+      .contact-section__email {
+        margin: 0;
+        width: 100%;
       }
     }
   }
