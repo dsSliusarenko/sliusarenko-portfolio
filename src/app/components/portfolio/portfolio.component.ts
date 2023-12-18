@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 import {environment} from "../../../environments/environment";
 import {PROJECT_FILTERS, ProjectFilters, ProjectFiltersItem, Project, Technology, Projects} from "./portfolio";
+import {BreakpointService} from "../../services/breakpoint.service";
 
 @Component({
   selector: 'sds-portfolio',
@@ -14,6 +15,13 @@ export class PortfolioComponent {
   protected ProjectFilters = ProjectFilters;
 
   filteredProjects: Project[] = Projects;
+  initSlidesAmount: number = 5;
+
+  constructor(private breakpointService: BreakpointService) {
+    if (this.breakpointService.isScreenMobile) {
+      this.initSlidesAmount = 3;
+    }
+  }
 
   setFilter(filterItem: ProjectFiltersItem): void {
     switch (filterItem.value) {
