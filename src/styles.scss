@@ -51,6 +51,45 @@ body {
   }
 }
 
+@mixin portfolio-project-back-side {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    background-color: white;
+    border-radius: 50%;
+
+    mat-icon {
+      width: 1.5rem;
+      height: 1.5rem;
+      transition: 0.5s;
+      color: black;
+    }
+
+    mat-icon:hover {
+      width: 1.75rem;
+      height: 1.75rem;
+      cursor: pointer;
+    }
+  }
+
+  button {
+    background-color: white;
+    color: black;
+  }
+
+  button:hover {
+    transition: all 0.3s ease-in-out;
+    background-color: $gray-background-hover;
+  }
+}
+
 .hero-image {
   position: fixed;
   z-index: -1;
@@ -427,41 +466,29 @@ body {
           }
 
           &__bottom {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            @include portfolio-project-back-side;
+          }
 
-            .icon-wrapper {
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              width: 2rem;
-              height: 2rem;
-              background-color: white;
-              border-radius: 50%;
-
-              mat-icon {
-                width: 1.5rem;
-                height: 1.5rem;
-                transition: 0.5s;
-                color: black;
-              }
-
-              mat-icon:hover {
-                width: 1.75rem;
-                height: 1.75rem;
-                cursor: pointer;
-              }
-            }
+          &__bottom-nda {
+            @include portfolio-project-back-side;
 
             button {
-              background-color: white;
-              color: black;
+              background-color: $gray-disabled;
             }
 
-            button:hover {
-              transition: all 0.3s ease-in-out;
-              background-color: $gray-background-hover;
+            .icon-wrapper {
+              background-color: $gray-disabled;
+
+            }
+
+            sds-carousel {
+              .slide {
+                background-color: $gray-disabled;
+              }
+
+              mat-icon {
+               color: $gray-disabled;
+              }
             }
           }
         }

@@ -32,18 +32,30 @@
                 <div class="overlay__description">
                   <p class="description">{{ project.description }}</p>
                 </div>
-                <div class="overlay__bottom">
-                  <a href="{{project.linkLive}}" class="icon" target="_blank">
-                    <button mat-flat-button color="primary">Demo</button>
-                  </a>
+                <div class="overlay__bottom-nda" *ngIf="project.isUnderNDA; else notUnderNDA">
+                  <button mat-raised-button [disabled]="project.isUnderNDA">Demo</button>
                   <sds-carousel [slides]="project.technologies" [initSlidesAmount]="initSlidesAmount"
                                 [showTitles]="false"></sds-carousel>
                   <div class="icon-wrapper">
-                    <a href="{{project.linkGit}}" class="icon" target="_blank">
+                    <a class="icon" matTooltip="Details under NDA">
                       <mat-icon [svgIcon]="'github'"></mat-icon>
                     </a>
                   </div>
                 </div>
+                <ng-template #notUnderNDA>
+                  <div class="overlay__bottom">
+                    <a href="{{project.linkLive}}" class="icon" target="_blank">
+                      <button mat-flat-button color="primary">Demo</button>
+                    </a>
+                    <sds-carousel [slides]="project.technologies" [initSlidesAmount]="initSlidesAmount"
+                                  [showTitles]="false"></sds-carousel>
+                    <div class="icon-wrapper">
+                      <a href="{{project.linkGit}}" class="icon" target="_blank">
+                        <mat-icon [svgIcon]="'github'"></mat-icon>
+                      </a>
+                    </div>
+                  </div>
+                </ng-template>
               </div>
             </div>
           </div>

@@ -3,6 +3,8 @@ export interface Project {
   description: string;
   linkGit: string;
   linkLive: string;
+  isUnderNDA?: boolean;
+  isInProgress?: boolean;
   screenshotLink: string;
   technologies: Technology[];
 }
@@ -77,10 +79,11 @@ export const Projects: Project[] = [
   },
   {
     title: 'Space Booker',
-    description: 'Nullam molestie sem eget risus bibendum, eget malesuada dolor consequat. Nam faucibus leo vitae tortor vestibulum, vitae lobortis justo tempor. Nulla facilisi. Proin id eleifend nisi',
+    description: 'A complex web CMS platform streamlining the process of creating and approving advertising content among international branches. All details under NDA',
     linkGit: '',
     linkLive: '',
-    screenshotLink: 'assets/images/projects/color3.jpg',
+    isUnderNDA: true,
+    screenshotLink: 'assets/images/projects/global-flow.jpg',
     technologies: [
       {
         title: 'TS',
