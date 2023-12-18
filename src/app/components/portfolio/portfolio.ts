@@ -4,7 +4,6 @@ export interface Project {
   linkGit: string;
   linkLive: string;
   isUnderNDA?: boolean;
-  isInProgress?: boolean;
   screenshotLink: string;
   technologies: Technology[];
 }
@@ -108,90 +107,114 @@ export const Projects: Project[] = [
     ]
   },
   {
-    title: 'Space Booker',
-    description: 'It sounds like you want to use a transparent background',
+    title: 'In Progress',
+    description: 'This project has not been developed yet',
     linkGit: '',
     linkLive: '',
-    screenshotLink: 'assets/images/projects/color4.jpg',
+    screenshotLink: 'assets/images/projects/in-progress.jpg',
     technologies: [
       {
-        title: 'TS',
-        iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/512px-Typescript_logo_2020.svg.png?20221110153201'
+        title: '?',
+        iconUrl: 'https://www.svgrepo.com/show/131030/question-mark.svg'
       },
       {
-        title: 'Material',
-        iconUrl: 'https://angular.io/assets/images/logos/angular/angular.svg'
+        title: '?',
+        iconUrl: 'https://www.svgrepo.com/show/131030/question-mark.svg'
       },
       {
-        title: 'CSS',
-        iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/1280px-CSS3_logo.svg.png'
+        title: '?',
+        iconUrl: 'https://www.svgrepo.com/show/131030/question-mark.svg'
       },
       {
-        title: 'HTML',
-        iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/archive/6/61/20111018085326%21HTML5_logo_and_wordmark.svg/120px-HTML5_logo_and_wordmark.svg.png'
+        title: '?',
+        iconUrl: 'https://www.svgrepo.com/show/131030/question-mark.svg'
       },
       {
-        title: 'NgRx',
-        iconUrl: 'https://seeklogo.com/images/N/ngrx-logo-D484A6B4B3-seeklogo.com.png'
+        title: '?',
+        iconUrl: 'https://www.svgrepo.com/show/131030/question-mark.svg'
       },
+      {
+        title: '?',
+        iconUrl: 'https://www.svgrepo.com/show/131030/question-mark.svg'
+      },
+      {
+        title: '?',
+        iconUrl: 'https://www.svgrepo.com/show/131030/question-mark.svg'
+      }
     ]
   },
   {
-    title: 'Space Booker',
-    description: 'It sounds like you want to use a transparent background',
+    title: 'In Progress',
+    description: 'This project has not been developed yet',
     linkGit: '',
     linkLive: '',
-    screenshotLink: 'assets/images/projects/color5.jpg',
+    screenshotLink: 'assets/images/projects/in-progress.jpg',
     technologies: [
       {
-        title: 'TS',
-        iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/512px-Typescript_logo_2020.svg.png?20221110153201'
+        title: '?',
+        iconUrl: 'https://www.svgrepo.com/show/131030/question-mark.svg'
       },
       {
-        title: 'Material',
-        iconUrl: 'https://angular.io/assets/images/logos/angular/angular.svg'
+        title: '?',
+        iconUrl: 'https://www.svgrepo.com/show/131030/question-mark.svg'
       },
       {
-        title: 'CSS',
-        iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/1280px-CSS3_logo.svg.png'
+        title: '?',
+        iconUrl: 'https://www.svgrepo.com/show/131030/question-mark.svg'
       },
       {
-        title: 'HTML',
-        iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/archive/6/61/20111018085326%21HTML5_logo_and_wordmark.svg/120px-HTML5_logo_and_wordmark.svg.png'
+        title: '?',
+        iconUrl: 'https://www.svgrepo.com/show/131030/question-mark.svg'
       },
       {
-        title: 'NgRx',
-        iconUrl: 'https://seeklogo.com/images/N/ngrx-logo-D484A6B4B3-seeklogo.com.png'
+        title: '?',
+        iconUrl: 'https://www.svgrepo.com/show/131030/question-mark.svg'
       },
+      {
+        title: '?',
+        iconUrl: 'https://www.svgrepo.com/show/131030/question-mark.svg'
+      },
+      {
+        title: '?',
+        iconUrl: 'https://www.svgrepo.com/show/131030/question-mark.svg'
+      }
     ]
   },
   {
-    title: 'Space Booker',
-    description: 'It sounds like you want to use a transparent background',
+    title: 'In Progress',
+    description: 'This project has not been developed yet',
     linkGit: '',
     linkLive: '',
-    screenshotLink: 'assets/images/projects/color6.jpg',
+    screenshotLink: 'assets/images/projects/in-progress.jpg',
     technologies: [
       {
-        title: 'TS',
-        iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/512px-Typescript_logo_2020.svg.png?20221110153201'
+        title: '?',
+        iconUrl: 'https://www.svgrepo.com/show/131030/question-mark.svg'
       },
       {
-        title: 'Material',
-        iconUrl: 'https://angular.io/assets/images/logos/angular/angular.svg'
+        title: '?',
+        iconUrl: 'https://www.svgrepo.com/show/131030/question-mark.svg'
       },
       {
-        title: 'CSS',
-        iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/1280px-CSS3_logo.svg.png'
+        title: '?',
+        iconUrl: 'https://www.svgrepo.com/show/131030/question-mark.svg'
       },
       {
-        title: 'HTML',
-        iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/archive/6/61/20111018085326%21HTML5_logo_and_wordmark.svg/120px-HTML5_logo_and_wordmark.svg.png'
+        title: '?',
+        iconUrl: 'https://www.svgrepo.com/show/131030/question-mark.svg'
       },
       {
-        title: 'NgRx',
-        iconUrl: 'https://seeklogo.com/images/N/ngrx-logo-D484A6B4B3-seeklogo.com.png'
+        title: '?',
+        iconUrl: 'https://www.svgrepo.com/show/131030/question-mark.svg'
       },
+      {
+        title: '?',
+        iconUrl: 'https://www.svgrepo.com/show/131030/question-mark.svg'
+      },
+      {
+        title: '?',
+        iconUrl: 'https://www.svgrepo.com/show/131030/question-mark.svg'
+      }
     ]
   }
 ]
