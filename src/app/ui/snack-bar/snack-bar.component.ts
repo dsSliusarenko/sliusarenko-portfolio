@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'sds-snack-bar',
@@ -6,5 +6,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./snack-bar.component.scss'],
 })
 export class SnackBarComponent {
-
 }

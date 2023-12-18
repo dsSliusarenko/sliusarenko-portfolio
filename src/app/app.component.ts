@@ -15,11 +15,11 @@ export class AppComponent implements AfterViewInit, OnDestroy{
     this.breakpointService.isScreenMobile ? this.isDrawerOpened = false : this.isDrawerOpened = true
   }
 
-  ngAfterViewInit() {
+  ngAfterViewInit(): void {
     AOS.init();
   }
 
-  ngOnDestroy() {
+  ngOnDestroy(): void {
     this.breakpointService.unsubscribe();
   }
 }

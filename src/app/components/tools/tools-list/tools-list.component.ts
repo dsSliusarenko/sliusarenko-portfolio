@@ -14,10 +14,7 @@ export class ToolsListComponent implements OnInit {
 
   toolsList!: ToolsList;
 
-  constructor() {
-  }
-
-  ngOnInit() {
+  ngOnInit(): void {
     switch (this.listType) {
       case this.listType = ListType.LANGUAGES:
         this.toolsList = TOOLS.filter(tool => tool.listType === ListType.LANGUAGES)[0];

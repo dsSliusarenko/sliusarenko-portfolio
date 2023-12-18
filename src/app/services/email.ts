@@ -1,6 +1,6 @@
 export interface EmailBody {
   name: string,
-  replyto: string,
+  replayTo: string,
   message: {
     subject: string,
     message: string,

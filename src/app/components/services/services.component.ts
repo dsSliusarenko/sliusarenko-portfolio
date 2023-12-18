@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {environment} from "../../../environments/environment";
-import {SERVICES} from "./services";
+import {Service, SERVICES} from "./services";
 
 @Component({
   selector: 'sds-services',
@@ -8,7 +8,6 @@ import {SERVICES} from "./services";
   styleUrls: ['./services.component.scss']
 })
 export class ServicesComponent {
-
   protected readonly environment = environment;
-  protected readonly SERVICES = SERVICES;
+  protected readonly SERVICES: Service[] = SERVICES;
 }

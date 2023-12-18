@@ -1,6 +1,6 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { SnackBarComponent } from './snack-bar.component';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {SnackBarComponent} from './snack-bar.component';
 import {AngularMaterialModule} from "../angular-material/angular-material.module";
 
 @NgModule({
@@ -12,4 +12,5 @@ import {AngularMaterialModule} from "../angular-material/angular-material.module
     AngularMaterialModule
   ]
 })
-export class SnackBarModule { }
+export class SnackBarModule {
+}

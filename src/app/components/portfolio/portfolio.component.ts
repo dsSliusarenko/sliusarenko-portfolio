@@ -10,9 +10,10 @@ import {PROJECT_FILTERS, ProjectFilters, ProjectFiltersItem, Project, Technology
 export class PortfolioComponent {
   protected environment = environment;
   protected Projects: Project[] = Projects;
-  filteredProjects: Project[] = Projects;
   protected PROJECT_FILTERS: ProjectFiltersItem[] = PROJECT_FILTERS;
-  protected readonly ProjectFilters = ProjectFilters;
+  protected ProjectFilters = ProjectFilters;
+
+  filteredProjects: Project[] = Projects;
 
   setFilter(filterItem: ProjectFiltersItem): void {
     switch (filterItem.value) {

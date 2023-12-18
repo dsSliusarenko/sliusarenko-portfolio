@@ -21,7 +21,7 @@ export class ContactComponent implements OnInit {
   constructor(private formBuilder: FormBuilder, private emailService: EmailService, private _snackBar: MatSnackBar) {
   }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.mailForm = this.formBuilder.group({
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
@@ -35,7 +35,7 @@ export class ContactComponent implements OnInit {
 
       const emailBody: EmailBody = {
         name: this.mailForm.get('name')?.value,
-        replyto: this.mailForm.get('email')?.value,
+        replayTo: this.mailForm.get('email')?.value,
         message: {
           subject: this.mailForm.get('subject')?.value,
           message: this.mailForm.get('message')?.value,
@@ -50,7 +50,7 @@ export class ContactComponent implements OnInit {
     }
   }
 
-  openSnackBar() {
+  openSnackBar(): void {
     const durationInSeconds: number = 5
     this._snackBar.openFromComponent(SnackBarComponent, {
       duration: durationInSeconds * 1000,

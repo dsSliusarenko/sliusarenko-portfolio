@@ -1,46 +1,46 @@
 <div class="resume gray-background">
   <div class="container">
-    <span class="section-title">{{environment.sections.resume.title}}</span>
-    <span class="section-description">{{environment.sections.resume.description}}</span>
+    <span class="section-title">{{ environment.sections.resume.title }}</span>
+    <span class="section-description">{{ environment.sections.resume.description }}</span>
     <div class="resume-section">
       <div class="resume-section__summary" data-aos="fade-up">
         <h3 class="resume-title">Summary</h3>
         <div class="resume-item">
-          <h4>{{environment.myName}}</h4>
+          <h4>{{ environment.myName }}</h4>
           <p><em>HERE IS TEXT ABOUT ME</em></p>
           <ul>
-            <li>{{environment.myLocation}}</li>
-            <li>{{environment.myPhone}}</li>
-            <li>{{environment.myEmail}}</li>
+            <li>{{ environment.myLocation }}</li>
+            <li>{{ environment.myPhone }}</li>
+            <li>{{ environment.myEmail }}</li>
           </ul>
         </div>
         <h3 class="resume-title">Education</h3>
         <div class="resume-item">
-          <h4>{{environment.education.speciality}}</h4>
-          <h5>{{environment.education.years}}</h5>
-          <p><em>{{environment.education.location}}</em></p>
-          <p>{{environment.education.description}}</p>
+          <h4>{{ environment.education.speciality }}</h4>
+          <h5>{{ environment.education.years }}</h5>
+          <p><em>{{ environment.education.location }}</em></p>
+          <p>{{ environment.education.description }}</p>
         </div>
       </div>
       <div class="resume-section__experience" data-aos="fade-up" data-aos-delay="100">
         <h3 class="resume-title">Professional Experience</h3>
         <div class="resume-item">
-          <h4>{{environment.experience.holdMyCode.position}}</h4>
-          <h5>{{environment.experience.holdMyCode.period}}</h5>
-          <p><em>{{environment.experience.holdMyCode.location}}</em></p>
+          <h4>{{ environment.experience.holdMyCode.position }}</h4>
+          <h5>{{ environment.experience.holdMyCode.period }}</h5>
+          <p><em>{{ environment.experience.holdMyCode.location }}</em></p>
           <ul>
             <li *ngFor="let point of environment.experience.holdMyCode.points">
-              {{point}}
+              {{ point }}
             </li>
           </ul>
         </div>
         <div class="resume-item">
-          <h4>{{environment.experience.csLtd.position}}</h4>
-          <h5>{{environment.experience.csLtd.period}}</h5>
-          <p><em>{{environment.experience.csLtd.location}}</em></p>
+          <h4>{{ environment.experience.csLtd.position }}</h4>
+          <h5>{{ environment.experience.csLtd.period }}</h5>
+          <p><em>{{ environment.experience.csLtd.location }}</em></p>
           <ul>
             <li *ngFor="let point of environment.experience.csLtd.points">
-              {{point}}
+              {{ point }}
             </li>
           </ul>
         </div>
