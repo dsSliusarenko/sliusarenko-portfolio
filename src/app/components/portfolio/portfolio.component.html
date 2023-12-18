@@ -1,14 +1,14 @@
 <div class="portfolio gray-background">
   <div class="container">
-    <span class="section-title">{{environment.sections.portfolio.title}}</span>
-    <span class="section-description">{{environment.sections.portfolio.description}}</span>
+    <span class="section-title">{{ environment.sections.portfolio.title }}</span>
+    <span class="section-description">{{ environment.sections.portfolio.description }}</span>
     <div class="projects-container">
       <div class="filters" data-aos="fade-up">
         <mat-button-toggle-group appearance="standard" name="fontStyle" aria-label="Font Style"
                                  [value]="ProjectFilters.ALL">
           <mat-button-toggle *ngFor="let filter of PROJECT_FILTERS"
                              value="{{filter.value}}" (click)="setFilter(filter)">
-            {{filter.label}}
+            {{ filter.label }}
           </mat-button-toggle>
         </mat-button-toggle-group>
       </div>
@@ -18,7 +18,7 @@
             <div class="project-front rounded-5px">
               <img class="background" src="{{project.screenshotLink}}" alt="Project ScreenShot">
               <div class="black-interim"></div>
-              <p class="title">{{project.title}}</p>
+              <p class="title">{{ project.title }}</p>
               <mat-icon class="touch-icon" [svgIcon]="'touch'"></mat-icon>
             </div>
             <div class="project-back rounded-5px">
@@ -26,17 +26,22 @@
               <div class="overlay">
                 <div class="overlay__title">
                   <a href="{{project.linkLive}}" class="title" target="_blank">
-                    {{project.title}}
+                    {{ project.title }}
                   </a>
                 </div>
                 <div class="overlay__description">
-                  <p class="description">{{project.description}}</p>
+                  <p class="description">{{ project.description }}</p>
                 </div>
                 <div class="overlay__bottom">
-                  <button mat-flat-button color="primary">Demo</button>
-                  <sds-carousel [slides]="project.technologies" [initSlidesAmount]="5" [showTitles]="false"></sds-carousel>
+                  <a href="{{project.linkLive}}" class="icon" target="_blank">
+                    <button mat-flat-button color="primary">Demo</button>
+                  </a>
+                  <sds-carousel [slides]="project.technologies" [initSlidesAmount]="4"
+                                [showTitles]="false"></sds-carousel>
                   <div class="icon-wrapper">
-                    <mat-icon [svgIcon]="'github'"></mat-icon>
+                    <a href="{{project.linkGit}}" class="icon" target="_blank">
+                      <mat-icon [svgIcon]="'github'"></mat-icon>
+                    </a>
                   </div>
                 </div>
               </div>

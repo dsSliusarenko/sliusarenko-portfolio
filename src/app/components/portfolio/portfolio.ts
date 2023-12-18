@@ -16,8 +16,8 @@ export const Projects: Project[] = [
   {
     title: 'My own website',
     description: 'A complex web CMS platform streamlining the process of creating and approving advertising content among international branches process of creating and approving advertising',
-    linkGit: '',
-    linkLive: 'https://www.shecodes.io/athena/1402-how-to-use-css-for-hover-on-a-text',
+    linkGit: 'https://github.com/dsSliusarenko/sliusarenko-portfolio',
+    linkLive: 'https://dmytro-sliusarenko.netlify.app',
     screenshotLink: 'assets/images/projects/color.jpg',
     technologies: [
       {

@@ -173,7 +173,6 @@ body {
       border-color: white
     }
   }
-
 }
 
 .tools-list {
@@ -868,9 +867,17 @@ body {
 }
 
 @media (max-width: 480px) {
+  @mixin section-padding {
+    padding: 3rem 0 2rem 0;
+  }
+
   @mixin flex-colum {
     display: flex;
     flex-direction: column;
+  }
+
+  body {
+    overflow: auto;
   }
 
   .container {
@@ -878,6 +885,11 @@ body {
 
     max-width: none;
     width: auto;
+    padding: 0 1rem 0 1rem;
+  }
+
+  .hero-image {
+    width: 100%;
   }
 
   .about {
@@ -898,11 +910,13 @@ body {
         .about-section__photo {
 
           img {
-
+            width: 100%;
           }
         }
 
         .about-section__description {
+          margin-top: 2rem;
+          padding: 0;
 
           .profile-title {
 
@@ -938,18 +952,34 @@ body {
       }
 
       .facts-section {
-        @include flex-colum();
+        //@include flex-colum();
+        //align-items: center;
+
+        //display: grid;
+        //grid-template-columns: repeat(2, 1fr);
+        //grid-gap: 20px;
+        ////grid-row-gap: 40px;
+
+        display: flex;
+        justify-content: space-between;
+        //align-items: center;
+        //column-gap: 20px;
+        flex-wrap: wrap;
 
         .fact {
+          //display: flex;
+          //width: 50%;
 
           mat-icon {
-
+            //width: 1rem;
+            //height: 1rem;
+            display: none;
           }
 
           .fact__metric {
 
             span {
-
+              font-size: x-large;
             }
           }
 
@@ -957,6 +987,10 @@ body {
 
           }
         }
+      }
+
+      .facts-section > * {
+        margin: 1em 0;
       }
     }
   }
@@ -975,6 +1009,8 @@ body {
 
         .services-list {
           @include flex-colum();
+
+          margin-top: 1rem;
 
           .tool {
 
@@ -1056,12 +1092,14 @@ body {
               }
 
               .project-back {
+                //width: auto;
 
                 .background {
 
                 }
 
                 .overlay {
+                  //width: auto;
 
                   .overlay__title {
 
@@ -1095,6 +1133,88 @@ body {
                     }
                   }
                 }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .resume {
+
+    .container {
+
+      .section-title {
+
+      }
+
+      .section-description {
+
+      }
+
+      .resume-section {
+        display: flex;
+        flex-direction: column;
+
+        .resume-section__summary {
+          width: auto;
+
+          .resume-title {
+
+          }
+
+          .resume-item {
+            //width: 100%;
+
+            h4 {
+
+            }
+
+            p {
+
+              em {
+
+              }
+            }
+
+            ul {
+
+              li {
+
+              }
+            }
+          }
+        }
+
+        .resume-section__experience {
+          width: auto;
+
+          .resume-title {
+
+          }
+
+          .resume-item {
+
+            h4 {
+
+            }
+
+            h5 {
+
+            }
+
+            p {
+
+              em {
+
+              }
+            }
+
+            ul {
+
+              li {
+
               }
             }
           }
@@ -1143,7 +1263,7 @@ body {
   }
 
   .contact {
-
+    //padding-bottom: 2rem;
     .container {
 
       .section-title {
@@ -1156,10 +1276,10 @@ body {
 
       .contact-section {
         @include flex-colum();
-        //align-items: center;
+
+        align-items: center;
 
         .contact-section__references {
-
           .reference {
 
             .reference__icon {
@@ -1192,6 +1312,8 @@ body {
         }
 
         .contact-section__email {
+          margin: 0;
+          width: 100%;
 
           .form {
 
@@ -1259,6 +1381,10 @@ body {
         }
       }
     }
+  }
+
+  .about, .resume, .tools, .portfolio, .services, .contact {
+    @include section-padding();
   }
 
   .section-description {

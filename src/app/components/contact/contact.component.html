@@ -27,14 +27,14 @@
               <mat-label>Name</mat-label>
               <input matInput placeholder="Type your name" formControlName="name">
               <mat-hint *ngIf="mailForm.controls['name'].invalid && (mailForm.controls['name'].touched)">
-                This field is required
+                Field is required
               </mat-hint>
             </mat-form-field>
             <mat-form-field appearance="outline">
               <mat-label>Email</mat-label>
               <input matInput placeholder="Type your email" formControlName="email">
               <mat-hint *ngIf="mailForm.controls['email'].invalid && (mailForm.controls['email'].touched)">
-                This field is required (ex. test@provider.domain)
+                Field is required
               </mat-hint>
             </mat-form-field>
           </div>
@@ -43,7 +43,7 @@
               <mat-label>Subject</mat-label>
               <input matInput placeholder="Type the message subject" formControlName="subject">
               <mat-hint *ngIf="mailForm.controls['subject'].invalid && (mailForm.controls['subject'].touched)">
-                This field is required
+                Field is required
               </mat-hint>
             </mat-form-field>
           </div>
@@ -52,7 +52,7 @@
               <mat-label>Message</mat-label>
               <input matInput placeholder="Type the message body here" formControlName="message">
               <mat-hint *ngIf="mailForm.controls['message'].invalid && (mailForm.controls['message'].touched)">
-                This field is required
+                Field is required
               </mat-hint>
             </mat-form-field>
           </div>
