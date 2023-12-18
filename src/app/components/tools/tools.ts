@@ -26,31 +26,37 @@ export const TOOLS: ToolsList [] = [
         title: 'TypeScript',
         description: 'TypeScript is a statically typed superset of JavaScript, enhancing code quality and maintainability. It catches type errors early, aiding robust development.',
         icon: 'typescript',
-        sourceUrl: 'BootstrapSSSSSSS'
+        sourceUrl: 'https://www.typescriptlang.org/'
       },
       {
         title: 'JavaScript',
         description: 'JavaScript powers web interactivity, handling client-side tasks like form validation and dynamic content updates. It\'s a versatile, essential web programming language.',
         icon: 'javascript',
-        sourceUrl: 'BootstrapSSSSSSS'
+        sourceUrl: 'https://www.javascript.com/'
       },
       {
         title: 'Java',
         description: 'Java: versatile, widely used programming language for applications, known for its portability and robustness.',
         icon: 'java',
-        sourceUrl: 'BootstrapSSSSSSS'
+        sourceUrl: 'https://www.java.com/en/'
       },
       {
         title: 'CSS',
         description: 'CSS styles web content, controlling layout and design. It enhances visual appeal and user experience.',
         icon: 'css',
-        sourceUrl: 'BootstrapSSSSSSS'
+        sourceUrl: 'https://en.wikipedia.org/wiki/CSS'
       },
       {
         title: 'HTML',
         description: 'HTML structures web content, defining page elements and layout. It\'s essential for web development.',
         icon: 'html',
-        sourceUrl: 'BootstrapSSSSSSS'
+        sourceUrl: 'https://en.wikipedia.org/wiki/HTML'
+      },
+      {
+        title: 'Python',
+        description: 'Python is a programming language that lets you work quickly and integrate systems more effectively',
+        icon: 'python',
+        sourceUrl: 'https://www.python.org/'
       }
     ]
   },
@@ -59,15 +65,27 @@ export const TOOLS: ToolsList [] = [
     tools: [
       {
         title: 'Angular',
-        description: 'Angular is a powerful JavaScript framework for building dynamic web applications, providing tools for data binding, routing, and component-based development.\n',
+        description: 'Angular is a powerful JavaScript framework for building dynamic web applications, providing tools for data binding, routing, and component-based development.',
         icon: 'angular',
         sourceUrl: 'https://angular.io/'
+      },
+      {
+        title: 'Ionic',
+        description: 'An open source mobile UI toolkit for building modern, high quality cross-platform mobile apps from a single code',
+        icon: 'ionic',
+        sourceUrl: 'https://ionicframework.com'
       },
       {
         title: 'NestJS',
         description: 'NestJS simplifies backend development with TypeScript, offering a framework for building scalable and maintainable Node.js applications.',
         icon: 'nestjs',
         sourceUrl: 'https://nestjs.com/'
+      },
+      {
+        title: 'NodeJS',
+        description: 'As an asynchronous event-driven JavaScript runtime, Node.js is designed to build scalable network applications.',
+        icon: 'nodejs',
+        sourceUrl: 'https://nodejs.org/en'
       },
       {
         title: 'React',
@@ -115,6 +133,12 @@ export const TOOLS: ToolsList [] = [
         description: 'An industry-standard authorization framework that enables third-party applications to access user data from a service without exposing user credentials.',
         icon: 'oauth',
         sourceUrl: 'https://oauth.net/'
+      },
+      {
+        title: 'Brynthum scheduler',
+        description: 'A professional scheduling UI component with a brain. The Scheduler Pro helps you schedule tasks while taking the availability of your resources and tasks into account.',
+        icon: 'bryntum',
+        sourceUrl: 'https://bryntum.com/products/schedulerpro/'
       }
     ]
   },
@@ -152,6 +176,30 @@ export const TOOLS: ToolsList [] = [
         sourceUrl: 'https://www.postman.com/'
       },
       {
+        title: 'Figma',
+        description: 'Figma is a vector online service for interface development and prototyping with the possibility of organizing joint work',
+        icon: 'figma',
+        sourceUrl: 'https://www.figma.com/'
+      },
+      {
+        title: 'Adobe XD',
+        description: 'Interface development program from Adobe Systems. Supports vector graphics and web design and creates small active prototypes',
+        icon: 'adobe',
+        sourceUrl: 'https://www.adobe.com/'
+      },
+      {
+        title: 'Sketch',
+        description: 'Sketch is the all-in-one platform for digital design — with collaborative design tools, prototyping and developer handoff.',
+        icon: 'sketch',
+        sourceUrl: 'https://www.sketch.com/'
+      },
+      {
+        title: 'Adobe Photoshop',
+        description: 'Graphic editor developed and distributed by Adobe Systems. This product is the market leader in the field of commercial bitmap editing tools',
+        icon: 'ps',
+        sourceUrl: 'https://www.adobe.com/ca/products/photoshop.html'
+      },
+      {
         title: 'GraphQl',
         description: 'GraphQL: Query language for APIs, offers precise data retrieval, reducing over-fetching, and enabling efficient client-server communication.',
         icon: 'graphql',
@@ -174,6 +222,18 @@ export const TOOLS: ToolsList [] = [
         description: 'Popular software registry and package manager for JavaScript, primarily used for managing and sharing code in the Node.js ecosystem.',
         icon: 'npm',
         sourceUrl: 'https://www.npmjs.com/'
+      },
+      {
+        title: 'Webpack',
+        description: 'Module bundler. Its main purpose is to bundle JavaScript files for usage in a browser, yet it is also capable of transforming and bundling.',
+        icon: 'webpack',
+        sourceUrl: 'https://webpack.js.org/'
+      },
+      {
+        title: 'Jenkins',
+        description: 'An open source automation server which enables developers around the world to reliably build, test, and deploy their software.',
+        icon: 'jenkins',
+        sourceUrl: 'https://www.jenkins.io/'
       }
     ]
   },

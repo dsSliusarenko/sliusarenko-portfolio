@@ -82,12 +82,20 @@ export class IconModule {
       domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-angular.svg'),
     );
     matIconRegistry.addSvgIcon(
+      'ionic',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-ionic.svg'),
+    );
+    matIconRegistry.addSvgIcon(
       'nestjs',
       domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-nestjs.svg'),
     );
     matIconRegistry.addSvgIcon(
       'react',
       domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-react.svg'),
+    );
+    matIconRegistry.addSvgIcon(
+      'nodejs',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-nodejs.svg'),
     );
     matIconRegistry.addSvgIcon(
       'typescript',
@@ -104,6 +112,10 @@ export class IconModule {
     matIconRegistry.addSvgIcon(
       'html',
       domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-html.svg'),
+    );
+    matIconRegistry.addSvgIcon(
+      'python',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-python.svg'),
     );
     matIconRegistry.addSvgIcon(
       'java',
@@ -126,6 +138,10 @@ export class IconModule {
       domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-leaflet.svg'),
     );
     matIconRegistry.addSvgIcon(
+      'bryntum',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-bryntum.svg'),
+    );
+    matIconRegistry.addSvgIcon(
       'rxjs',
       domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-rxjs.svg'),
     );
@@ -136,6 +152,18 @@ export class IconModule {
     matIconRegistry.addSvgIcon(
       'postman',
       domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-postman.svg'),
+    );
+    matIconRegistry.addSvgIcon(
+      'figma',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-figma.svg'),
+    );
+    matIconRegistry.addSvgIcon(
+      'adobe',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-adobe.svg'),
+    );
+    matIconRegistry.addSvgIcon(
+      'sketch',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-sketch.svg'),
     );
     matIconRegistry.addSvgIcon(
       'docker',
@@ -174,12 +202,24 @@ export class IconModule {
       domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-gitlab.svg'),
     );
     matIconRegistry.addSvgIcon(
-        'npm',
-        domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-npm.svg'),
+      'npm',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-npm.svg'),
     );
     matIconRegistry.addSvgIcon(
-        'oauth',
-        domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-oauth.svg'),
+      'webpack',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-webpack.svg'),
+    );
+    matIconRegistry.addSvgIcon(
+      'jenkins',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-jenkins.svg'),
+    );
+    matIconRegistry.addSvgIcon(
+      'ps',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-ps.svg'),
+    );
+    matIconRegistry.addSvgIcon(
+      'oauth',
+      domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/mat-oauth.svg'),
     );
     matIconRegistry.addSvgIcon(
       'project',
